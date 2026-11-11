@@ -1,0 +1,27 @@
+# Python & Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Temporales del sistema y editores
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+.gemini/
+.idea/
+.vscode/
+
+# Binarios y datasets crudos pesados (>50MB)
+*.zip
+*.tar.gz
+*.7z
+*.raw
+data/cache_wfs/
+data/raw_chunks/
+
+# Archivos de entorno
+.env
