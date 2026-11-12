@@ -1,8 +1,8 @@
 window.DASHBOARD_DATA = {
   "metadata": {
-    "fecha": "2026-11-11",
+    "fecha": "2026-11-12",
     "proyecto": "PROTELEM-EPEC/plan-relevamiento-topologia-set-parcelario",
-    "descripcion": "Tablero Integral de Auditoría Topológica de Subestaciones, Fusión Parcelaria y Tarifa Social EPEC",
+    "descripcion": "Tablero Integral de Auditoría Topológica de Subestaciones, Calidad de Polígonos y Plan de Relevamiento Futuro EPEC",
     "autor": "Squad Ágil PM-Operadores (Arquetipo A: GIS, Catastro y Redes Eléctricas)"
   },
   "kpis": {
@@ -12,7 +12,14 @@ window.DASHBOARD_DATA = {
     "total_parcelas_en_set": 311839,
     "sets_sensibilidad_social_alta": 621,
     "total_parcelas_cortadas_frontera": 110230,
-    "total_parcelas_duplicadas_manzana": 69011
+    "total_parcelas_duplicadas_manzana": 69011,
+    "total_suministros_provincial": 1208097,
+    "total_relevados_provincial": 436715,
+    "total_pendientes_provincial": 138467,
+    "total_20_planes": 585819,
+    "relevados_20_planes": 348673,
+    "pendientes_20_planes": 237146,
+    "pct_avance_20_planes": 59.52
   },
   "distribucion_categorias": {
     "PEQUEÑA (1-149 sumis)": 3164,
@@ -33,7 +40,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.29,
       "categoria_set": "MEGA_SET (>=1000 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16326,
@@ -46,7 +57,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 14.13,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "MALAGUEÑO",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 849,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 12287,
@@ -59,7 +74,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.13,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 753,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 15109,
@@ -72,7 +91,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.29,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 13406,
@@ -85,7 +108,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.86,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15083,
@@ -98,7 +125,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 8.64,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "MALAGUEÑO",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 683,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 12295,
@@ -111,7 +142,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.15,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 660,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 16062,
@@ -124,7 +159,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.92,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 640,
+      "pct_avance_relevamiento": 1.69
     },
     {
       "id": 14608,
@@ -137,7 +176,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.48,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 72,
+      "pct_avance_relevamiento": 88.37
     },
     {
       "id": 13356,
@@ -150,7 +193,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.32,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15380,
@@ -163,7 +210,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.0,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 1,
+      "pct_avance_relevamiento": 99.83
     },
     {
       "id": 13163,
@@ -176,7 +227,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 1.33,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15855,
@@ -189,7 +244,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.17,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16972,
@@ -202,7 +261,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 3.26,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "VILLA MARIA",
-      "distrito_principal": "VILLA MARIA"
+      "distrito_principal": "VILLA MARIA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16054,
@@ -215,7 +278,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 2.82,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15460,
@@ -228,7 +295,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.0,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 567,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 16628,
@@ -241,7 +312,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 2.65,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 566,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 14452,
@@ -254,7 +329,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.35,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16319,
@@ -267,7 +346,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 8.39,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "MALAGUEÑO",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 560,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 14340,
@@ -280,7 +363,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.0,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 14741,
@@ -293,7 +380,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.73,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16630,
@@ -306,7 +397,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 4.03,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 546,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 14719,
@@ -319,7 +414,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.95,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 14785,
@@ -332,7 +431,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.57,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 358,
+      "pct_avance_relevamiento": 31.81
     },
     {
       "id": 16752,
@@ -345,7 +448,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 1.15,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "VILLA MARIA",
-      "distrito_principal": "VILLA MARIA"
+      "distrito_principal": "VILLA MARIA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16733,
@@ -358,7 +465,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 2.33,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "VILLA MARIA",
-      "distrito_principal": "VILLA MARIA"
+      "distrito_principal": "VILLA MARIA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 12296,
@@ -371,7 +482,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.2,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 509,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 13174,
@@ -384,7 +499,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 2.36,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 5,
+      "pct_avance_relevamiento": 99.02
     },
     {
       "id": 13577,
@@ -397,7 +516,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.79,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16774,
@@ -410,7 +533,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 1.19,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "VILLA MARIA",
-      "distrito_principal": "VILLA MARIA"
+      "distrito_principal": "VILLA MARIA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16089,
@@ -423,7 +550,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 1.2,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16657,
@@ -436,7 +567,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 1.4,
       "categoria_set": "GRANDE (500-999 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 500,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 13244,
@@ -449,7 +584,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 5.44,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16046,
@@ -462,7 +601,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.81,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 474,
+      "pct_avance_relevamiento": 4.44
     },
     {
       "id": 15801,
@@ -475,7 +618,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 4.07,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 478,
+      "pct_avance_relevamiento": 2.85
     },
     {
       "id": 16729,
@@ -488,7 +635,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 2.68,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "VILLA MARIA",
-      "distrito_principal": "VILLA MARIA"
+      "distrito_principal": "VILLA MARIA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 12282,
@@ -501,7 +652,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.0,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 470,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 16809,
@@ -514,7 +669,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 4.27,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15886,
@@ -527,7 +686,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 3.0,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 14011,
@@ -540,7 +703,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.44,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 12773,
@@ -553,7 +720,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.22,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 456,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 16706,
@@ -566,7 +737,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 1.11,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 451,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 16660,
@@ -579,7 +754,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.22,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 451,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 16956,
@@ -592,7 +771,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 6.22,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16897,
@@ -605,7 +788,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 2.02,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15459,
@@ -618,7 +805,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.0,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 442,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 9736,
@@ -631,7 +822,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 12.13,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16808,
@@ -644,7 +839,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 5.3,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16097,
@@ -657,7 +856,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.46,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15086,
@@ -670,7 +873,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.0,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "MALAGUEÑO",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 428,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 16760,
@@ -683,7 +890,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 5.61,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "VILLA MARIA",
-      "distrito_principal": "VILLA MARIA"
+      "distrito_principal": "VILLA MARIA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16634,
@@ -696,7 +907,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 2.35,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 425,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 14125,
@@ -709,7 +924,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 1.41,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 418,
+      "pct_avance_relevamiento": 1.65
     },
     {
       "id": 14463,
@@ -722,7 +941,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 2.12,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 8,
+      "pct_avance_relevamiento": 98.11
     },
     {
       "id": 13954,
@@ -735,7 +958,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.24,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15098,
@@ -748,7 +975,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.0,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 399,
+      "pct_avance_relevamiento": 5.45
     },
     {
       "id": 15137,
@@ -761,7 +992,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.48,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 16,
+      "pct_avance_relevamiento": 96.2
     },
     {
       "id": 16654,
@@ -774,7 +1009,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.95,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 420,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 12271,
@@ -787,7 +1026,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.48,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 420,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 12182,
@@ -800,7 +1043,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 2.62,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 78,
+      "pct_avance_relevamiento": 81.43
     },
     {
       "id": 16583,
@@ -813,7 +1060,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 13.13,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 16,
+      "pct_avance_relevamiento": 96.18
     },
     {
       "id": 12228,
@@ -826,7 +1077,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.48,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 417,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 16659,
@@ -839,7 +1094,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 1.2,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 416,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 13058,
@@ -852,7 +1111,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.97,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 63,
+      "pct_avance_relevamiento": 84.78
     },
     {
       "id": 16052,
@@ -865,7 +1128,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 1.21,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 392,
+      "pct_avance_relevamiento": 5.31
     },
     {
       "id": 16803,
@@ -878,7 +1145,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 7.52,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15822,
@@ -891,7 +1162,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.73,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16810,
@@ -904,7 +1179,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 10.05,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "RIO CUARTO",
-      "distrito_principal": "RIO CUARTO"
+      "distrito_principal": "RIO CUARTO",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 12289,
@@ -917,7 +1196,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.0,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 133,
+      "pct_avance_relevamiento": 67.32
     },
     {
       "id": 14399,
@@ -930,7 +1213,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 5.17,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 14597,
@@ -943,7 +1230,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.74,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 15,
+      "pct_avance_relevamiento": 96.3
     },
     {
       "id": 15236,
@@ -956,7 +1247,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.74,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 2,
+      "pct_avance_relevamiento": 99.5
     },
     {
       "id": 15136,
@@ -969,7 +1264,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.25,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 17,
+      "pct_avance_relevamiento": 95.79
     },
     {
       "id": 12337,
@@ -982,7 +1281,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 8.25,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 49,
+      "pct_avance_relevamiento": 87.75
     },
     {
       "id": 9772,
@@ -995,7 +1298,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 5.03,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "VILLA MARIA",
-      "distrito_principal": "VILLA MARIA"
+      "distrito_principal": "VILLA MARIA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16100,
@@ -1008,7 +1315,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.5,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16528,
@@ -1021,7 +1332,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 9.07,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 13172,
@@ -1034,7 +1349,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 11.42,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 387,
+      "pct_avance_relevamiento": 1.78
     },
     {
       "id": 16109,
@@ -1047,7 +1366,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.51,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 7,
+      "pct_avance_relevamiento": 98.22
     },
     {
       "id": 16962,
@@ -1060,7 +1383,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 6.36,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "VILLA MARIA",
-      "distrito_principal": "VILLA MARIA"
+      "distrito_principal": "VILLA MARIA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 14,
+      "pct_avance_relevamiento": 96.44
     },
     {
       "id": 15124,
@@ -1073,7 +1400,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.0,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 5,
+      "pct_avance_relevamiento": 98.73
     },
     {
       "id": 15935,
@@ -1086,7 +1417,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.26,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 380,
+      "pct_avance_relevamiento": 2.81
     },
     {
       "id": 15829,
@@ -1099,7 +1434,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.51,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 7704,
@@ -1112,7 +1451,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 2.84,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "VILLA CARLOS PAZ",
-      "distrito_principal": "VILLA CARLOS PAZ"
+      "distrito_principal": "VILLA CARLOS PAZ",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 387,
+      "pct_avance_relevamiento": 0.26
     },
     {
       "id": 15145,
@@ -1125,7 +1468,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.26,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 13,
+      "pct_avance_relevamiento": 96.63
     },
     {
       "id": 14043,
@@ -1138,7 +1485,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.26,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 384,
+      "pct_avance_relevamiento": 0.52
     },
     {
       "id": 16135,
@@ -1151,7 +1502,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 9.38,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16321,
@@ -1164,7 +1519,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 16.71,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "MALAGUEÑO",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 383,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 13076,
@@ -1177,7 +1536,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.52,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16734,
@@ -1190,7 +1553,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 3.39,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "VILLA MARIA",
-      "distrito_principal": "VILLA MARIA"
+      "distrito_principal": "VILLA MARIA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16361,
@@ -1203,7 +1570,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 19.32,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 12288,
@@ -1216,7 +1587,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.26,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 383,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 13094,
@@ -1229,7 +1604,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.79,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 16035,
@@ -1242,7 +1621,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.26,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 378,
+      "pct_avance_relevamiento": 1.05
     },
     {
       "id": 12973,
@@ -1255,7 +1638,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 10.47,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15469,
@@ -1268,7 +1655,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 0.26,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 15308,
@@ -1281,7 +1672,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 10.82,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "suministros_pendientes": 379,
+      "pct_avance_relevamiento": 0.0
     },
     {
       "id": 13243,
@@ -1294,7 +1689,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 9.28,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     },
     {
       "id": 14076,
@@ -1307,7 +1706,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 5.31,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "suministros_pendientes": 375,
+      "pct_avance_relevamiento": 0.53
     },
     {
       "id": 14434,
@@ -1320,7 +1723,11 @@ window.DASHBOARD_DATA = {
       "pct_tarifa_social": 18.67,
       "categoria_set": "MEDIANA (150-499 sumis)",
       "localidad_principal": "CORDOBA",
-      "distrito_principal": "CORDOBA"
+      "distrito_principal": "CORDOBA",
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "suministros_pendientes": 0,
+      "pct_avance_relevamiento": 100.0
     }
   ],
   "top_tarifa_social": [
@@ -6427,6 +6834,1824 @@ window.DASHBOARD_DATA = {
       "nro_parcela": 26,
       "distrito_descripcion": "CORDOBA",
       "cant_suministros": 1
+    }
+  ],
+  "calidad_poligonos": [
+    {
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "total_sets": 1278,
+      "sumis_totales": 40634,
+      "sumis_relevados": 35611,
+      "sumis_pendientes": 18944,
+      "parcelas_cortadas_totales": 9167,
+      "compacidad_media": 0.5635258215962442,
+      "pct_sets": 24.13
+    },
+    {
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "total_sets": 963,
+      "sumis_totales": 12594,
+      "sumis_relevados": 14468,
+      "sumis_pendientes": 5776,
+      "parcelas_cortadas_totales": 0,
+      "compacidad_media": 0.6180985739750446,
+      "pct_sets": 18.18
+    },
+    {
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "total_sets": 1923,
+      "sumis_totales": 321611,
+      "sumis_relevados": 301705,
+      "sumis_pendientes": 82453,
+      "parcelas_cortadas_totales": 133457,
+      "compacidad_media": 0.5476429017160686,
+      "pct_sets": 36.31
+    },
+    {
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "total_sets": 973,
+      "sumis_totales": 99947,
+      "sumis_relevados": 84931,
+      "sumis_pendientes": 31294,
+      "parcelas_cortadas_totales": 21127,
+      "compacidad_media": 0.5618350462487153,
+      "pct_sets": 18.37
+    }
+  ],
+  "matriz_priorizacion": [
+    {
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO",
+      "total_sets": 387,
+      "sumis_totales": 46446,
+      "sumis_relevados": 1747,
+      "sumis_pendientes": 44699,
+      "tarifa_social": 2264,
+      "parcelas_cortadas": 6482,
+      "pct_sets": 7.31
+    },
+    {
+      "prioridad_relevamiento_futuro": "2_SENSIBILIDAD_SOCIAL",
+      "total_sets": 105,
+      "sumis_totales": 7418,
+      "sumis_relevados": 224,
+      "sumis_pendientes": 7194,
+      "tarifa_social": 2546,
+      "parcelas_cortadas": 1833,
+      "pct_sets": 1.98
+    },
+    {
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO",
+      "total_sets": 449,
+      "sumis_totales": 81861,
+      "sumis_relevados": 2963,
+      "sumis_pendientes": 78898,
+      "tarifa_social": 5822,
+      "parcelas_cortadas": 28767,
+      "pct_sets": 8.48
+    },
+    {
+      "prioridad_relevamiento_futuro": "4_AVANZADA_O_COMPLETADA",
+      "total_sets": 3481,
+      "sumis_totales": 339061,
+      "sumis_relevados": 423101,
+      "sumis_pendientes": 7676,
+      "tarifa_social": 26585,
+      "parcelas_cortadas": 121740,
+      "pct_sets": 65.73
+    },
+    {
+      "prioridad_relevamiento_futuro": "5_SIN_DEMANDA_O_ESPECIAL",
+      "total_sets": 715,
+      "sumis_totales": 0,
+      "sumis_relevados": 8680,
+      "sumis_pendientes": 0,
+      "tarifa_social": 0,
+      "parcelas_cortadas": 4929,
+      "pct_sets": 13.5
+    }
+  ],
+  "planes_relevamiento": [
+    {
+      "plan": "Plan 01",
+      "total_puntos": 29910,
+      "total_relevados": 27053.0,
+      "total_pendientes": 2857.0,
+      "pct_avance": 90.45,
+      "pendientes_cc": 2845.0,
+      "pendientes_tarifa_social": 7.0,
+      "pendientes_otros": 5.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    },
+    {
+      "plan": "Plan 02",
+      "total_puntos": 19856,
+      "total_relevados": 18582.0,
+      "total_pendientes": 1274.0,
+      "pct_avance": 93.58,
+      "pendientes_cc": 1268.0,
+      "pendientes_tarifa_social": 4.0,
+      "pendientes_otros": 2.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    },
+    {
+      "plan": "Plan 03",
+      "total_puntos": 38204,
+      "total_relevados": 33581.0,
+      "total_pendientes": 4623.0,
+      "pct_avance": 87.9,
+      "pendientes_cc": 4191.0,
+      "pendientes_tarifa_social": 416.0,
+      "pendientes_otros": 16.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    },
+    {
+      "plan": "Plan 04",
+      "total_puntos": 24285,
+      "total_relevados": 22690.0,
+      "total_pendientes": 1595.0,
+      "pct_avance": 93.43,
+      "pendientes_cc": 1589.0,
+      "pendientes_tarifa_social": 5.0,
+      "pendientes_otros": 1.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    },
+    {
+      "plan": "Plan 05",
+      "total_puntos": 27593,
+      "total_relevados": 22155.0,
+      "total_pendientes": 5438.0,
+      "pct_avance": 80.29,
+      "pendientes_cc": 3820.0,
+      "pendientes_tarifa_social": 1589.0,
+      "pendientes_otros": 29.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    },
+    {
+      "plan": "Plan 06",
+      "total_puntos": 12675,
+      "total_relevados": 11748.0,
+      "total_pendientes": 927.0,
+      "pct_avance": 92.69,
+      "pendientes_cc": 866.0,
+      "pendientes_tarifa_social": 56.0,
+      "pendientes_otros": 5.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    },
+    {
+      "plan": "Plan 07",
+      "total_puntos": 25216,
+      "total_relevados": 868.0,
+      "total_pendientes": 24348.0,
+      "pct_avance": 3.44,
+      "pendientes_cc": 20982.0,
+      "pendientes_tarifa_social": 3285.0,
+      "pendientes_otros": 81.0,
+      "diagnostico_operativo": "RELEVAMIENTO_MIXTO_ESTANDAR"
+    },
+    {
+      "plan": "Plan 08",
+      "total_puntos": 27622,
+      "total_relevados": 87.0,
+      "total_pendientes": 27535.0,
+      "pct_avance": 0.31,
+      "pendientes_cc": 27061.0,
+      "pendientes_tarifa_social": 404.0,
+      "pendientes_otros": 70.0,
+      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO"
+    },
+    {
+      "plan": "Plan 09",
+      "total_puntos": 16863,
+      "total_relevados": 816.0,
+      "total_pendientes": 16047.0,
+      "pct_avance": 4.84,
+      "pendientes_cc": 13466.0,
+      "pendientes_tarifa_social": 2507.0,
+      "pendientes_otros": 74.0,
+      "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA"
+    },
+    {
+      "plan": "Plan 10",
+      "total_puntos": 17360,
+      "total_relevados": 12857.0,
+      "total_pendientes": 4503.0,
+      "pct_avance": 74.06,
+      "pendientes_cc": 2966.0,
+      "pendientes_tarifa_social": 1515.0,
+      "pendientes_otros": 22.0,
+      "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA"
+    },
+    {
+      "plan": "Plan 11",
+      "total_puntos": 24233,
+      "total_relevados": 440.0,
+      "total_pendientes": 23793.0,
+      "pct_avance": 1.82,
+      "pendientes_cc": 18336.0,
+      "pendientes_tarifa_social": 5335.0,
+      "pendientes_otros": 122.0,
+      "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA"
+    },
+    {
+      "plan": "Plan 12",
+      "total_puntos": 22098,
+      "total_relevados": 11646.0,
+      "total_pendientes": 10452.0,
+      "pct_avance": 52.7,
+      "pendientes_cc": 10323.0,
+      "pendientes_tarifa_social": 114.0,
+      "pendientes_otros": 15.0,
+      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO"
+    },
+    {
+      "plan": "Plan 13",
+      "total_puntos": 34498,
+      "total_relevados": 31730.0,
+      "total_pendientes": 2768.0,
+      "pct_avance": 91.98,
+      "pendientes_cc": 2705.0,
+      "pendientes_tarifa_social": 54.0,
+      "pendientes_otros": 9.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    },
+    {
+      "plan": "Plan 14",
+      "total_puntos": 47912,
+      "total_relevados": 33.0,
+      "total_pendientes": 47879.0,
+      "pct_avance": 0.07,
+      "pendientes_cc": 47764.0,
+      "pendientes_tarifa_social": 26.0,
+      "pendientes_otros": 89.0,
+      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO"
+    },
+    {
+      "plan": "Plan 15",
+      "total_puntos": 30593,
+      "total_relevados": 598.0,
+      "total_pendientes": 29995.0,
+      "pct_avance": 1.95,
+      "pendientes_cc": 29751.0,
+      "pendientes_tarifa_social": 68.0,
+      "pendientes_otros": 176.0,
+      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO"
+    },
+    {
+      "plan": "Plan 16",
+      "total_puntos": 47984,
+      "total_relevados": 43301.0,
+      "total_pendientes": 4683.0,
+      "pct_avance": 90.24,
+      "pendientes_cc": 4619.0,
+      "pendientes_tarifa_social": 55.0,
+      "pendientes_otros": 9.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    },
+    {
+      "plan": "Plan 17",
+      "total_puntos": 34787,
+      "total_relevados": 15291.0,
+      "total_pendientes": 19496.0,
+      "pct_avance": 43.96,
+      "pendientes_cc": 19391.0,
+      "pendientes_tarifa_social": 53.0,
+      "pendientes_otros": 52.0,
+      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO"
+    },
+    {
+      "plan": "Plan 18",
+      "total_puntos": 33248,
+      "total_relevados": 30741.0,
+      "total_pendientes": 2507.0,
+      "pct_avance": 92.46,
+      "pendientes_cc": 2083.0,
+      "pendientes_tarifa_social": 412.0,
+      "pendientes_otros": 12.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    },
+    {
+      "plan": "Plan 19",
+      "total_puntos": 29408,
+      "total_relevados": 26600.0,
+      "total_pendientes": 2808.0,
+      "pct_avance": 90.45,
+      "pendientes_cc": 2787.0,
+      "pendientes_tarifa_social": 14.0,
+      "pendientes_otros": 7.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    },
+    {
+      "plan": "Plan 20",
+      "total_puntos": 41474,
+      "total_relevados": 37856.0,
+      "total_pendientes": 3618.0,
+      "pct_avance": 91.28,
+      "pendientes_cc": 3582.0,
+      "pendientes_tarifa_social": 28.0,
+      "pendientes_otros": 8.0,
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+    }
+  ],
+  "subestaciones_top_pendientes": [
+    {
+      "id": 16326,
+      "ctmtbt": "8025",
+      "agf_codigo": 1100,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "MALAGUEÑO",
+      "cant_suministros": 849,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 849,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 52,
+      "pct_tarifa_social": 14.13,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 12287,
+      "ctmtbt": "1464",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 753,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 753,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 30,
+      "pct_tarifa_social": 0.13,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 15083,
+      "ctmtbt": "8000",
+      "agf_codigo": 1100,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "MALAGUEÑO",
+      "cant_suministros": 683,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 683,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "parcelas_cortadas": 0,
+      "pct_tarifa_social": 8.64,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 12295,
+      "ctmtbt": "1503",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 660,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 660,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 78,
+      "pct_tarifa_social": 0.15,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16062,
+      "ctmtbt": "1849",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 651,
+      "suministros_relevados": 11,
+      "suministros_pendientes": 640,
+      "pct_avance_relevamiento": 1.69,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 50,
+      "pct_tarifa_social": 0.92,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15460,
+      "ctmtbt": "0411",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 567,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 567,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 47,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16628,
+      "ctmtbt": "8512",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 566,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 566,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 23,
+      "pct_tarifa_social": 2.65,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 16319,
+      "ctmtbt": "8023",
+      "agf_codigo": 1100,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "MALAGUEÑO",
+      "cant_suministros": 560,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 560,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "parcelas_cortadas": 1,
+      "pct_tarifa_social": 8.39,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 16630,
+      "ctmtbt": "8514",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 546,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 546,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "parcelas_cortadas": 0,
+      "pct_tarifa_social": 4.03,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 12296,
+      "ctmtbt": "1465",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 509,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 509,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 32,
+      "pct_tarifa_social": 0.2,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16657,
+      "ctmtbt": "8542",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 500,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 500,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 23,
+      "pct_tarifa_social": 1.4,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 15801,
+      "ctmtbt": "0218",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 492,
+      "suministros_relevados": 14,
+      "suministros_pendientes": 478,
+      "pct_avance_relevamiento": 2.85,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 45,
+      "pct_tarifa_social": 4.07,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16046,
+      "ctmtbt": "1542",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 496,
+      "suministros_relevados": 22,
+      "suministros_pendientes": 474,
+      "pct_avance_relevamiento": 4.44,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 58,
+      "pct_tarifa_social": 0.81,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 12282,
+      "ctmtbt": "0958",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 470,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 470,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 38,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 12773,
+      "ctmtbt": "1461",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 456,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 456,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 110,
+      "pct_tarifa_social": 0.22,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16706,
+      "ctmtbt": "8591",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 451,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 451,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 45,
+      "pct_tarifa_social": 1.11,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16660,
+      "ctmtbt": "8545",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 451,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 451,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 41,
+      "pct_tarifa_social": 0.22,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15459,
+      "ctmtbt": "1496",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 442,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 442,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 74,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15086,
+      "ctmtbt": "8004",
+      "agf_codigo": 1100,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "MALAGUEÑO",
+      "cant_suministros": 428,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 428,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "parcelas_cortadas": 9,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 16634,
+      "ctmtbt": "8518",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 425,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 425,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 23,
+      "pct_tarifa_social": 2.35,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 16654,
+      "ctmtbt": "8539",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 420,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 420,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 48,
+      "pct_tarifa_social": 0.95,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 12271,
+      "ctmtbt": "0811",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 420,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 420,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 48,
+      "pct_tarifa_social": 0.48,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 14125,
+      "ctmtbt": "1335",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 425,
+      "suministros_relevados": 7,
+      "suministros_pendientes": 418,
+      "pct_avance_relevamiento": 1.65,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 56,
+      "pct_tarifa_social": 1.41,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 12228,
+      "ctmtbt": "4682",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 417,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 417,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 50,
+      "pct_tarifa_social": 0.48,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16659,
+      "ctmtbt": "8544",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 416,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 416,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 37,
+      "pct_tarifa_social": 1.2,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15098,
+      "ctmtbt": "0043",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 422,
+      "suministros_relevados": 23,
+      "suministros_pendientes": 399,
+      "pct_avance_relevamiento": 5.45,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 35,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16052,
+      "ctmtbt": "1553",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 414,
+      "suministros_relevados": 22,
+      "suministros_pendientes": 392,
+      "pct_avance_relevamiento": 5.31,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 73,
+      "pct_tarifa_social": 1.21,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 13172,
+      "ctmtbt": "1210",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 394,
+      "suministros_relevados": 7,
+      "suministros_pendientes": 387,
+      "pct_avance_relevamiento": 1.78,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 89,
+      "pct_tarifa_social": 11.42,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 7704,
+      "ctmtbt": "0083",
+      "agf_codigo": 9000,
+      "distrito_principal": "VILLA CARLOS PAZ",
+      "localidad_principal": "VILLA CARLOS PAZ",
+      "cant_suministros": 388,
+      "suministros_relevados": 1,
+      "suministros_pendientes": 387,
+      "pct_avance_relevamiento": 0.26,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 129,
+      "pct_tarifa_social": 2.84,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 14043,
+      "ctmtbt": "4758",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 386,
+      "suministros_relevados": 2,
+      "suministros_pendientes": 384,
+      "pct_avance_relevamiento": 0.52,
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "parcelas_cortadas": 1,
+      "pct_tarifa_social": 0.26,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 12288,
+      "ctmtbt": "1239",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 383,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 383,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 35,
+      "pct_tarifa_social": 0.26,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16321,
+      "ctmtbt": "8021",
+      "agf_codigo": 1100,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "MALAGUEÑO",
+      "cant_suministros": 383,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 383,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "parcelas_cortadas": 0,
+      "pct_tarifa_social": 16.71,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 15935,
+      "ctmtbt": "1340",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 391,
+      "suministros_relevados": 11,
+      "suministros_pendientes": 380,
+      "pct_avance_relevamiento": 2.81,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 45,
+      "pct_tarifa_social": 0.26,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15308,
+      "ctmtbt": "0753",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 379,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 379,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 34,
+      "pct_tarifa_social": 10.82,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 16035,
+      "ctmtbt": "1554",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 382,
+      "suministros_relevados": 4,
+      "suministros_pendientes": 378,
+      "pct_avance_relevamiento": 1.05,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 70,
+      "pct_tarifa_social": 0.26,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 14076,
+      "ctmtbt": "1841",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 377,
+      "suministros_relevados": 2,
+      "suministros_pendientes": 375,
+      "pct_avance_relevamiento": 0.53,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 74,
+      "pct_tarifa_social": 5.31,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 14378,
+      "ctmtbt": "146/",
+      "agf_codigo": 5050,
+      "distrito_principal": "VILLA ALLENDE",
+      "localidad_principal": "VILLA ALLENDE",
+      "cant_suministros": 368,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 368,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 28,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 12299,
+      "ctmtbt": "0960",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 364,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 364,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 43,
+      "pct_tarifa_social": 0.55,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 13634,
+      "ctmtbt": "5470",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 362,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 362,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 16,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 14785,
+      "ctmtbt": "1852",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 525,
+      "suministros_relevados": 167,
+      "suministros_pendientes": 358,
+      "pct_avance_relevamiento": 31.81,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 86,
+      "pct_tarifa_social": 0.57,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 9370,
+      "ctmtbt": "0075",
+      "agf_codigo": 9000,
+      "distrito_principal": "VILLA CARLOS PAZ",
+      "localidad_principal": "VILLA CARLOS PAZ",
+      "cant_suministros": 371,
+      "suministros_relevados": 13,
+      "suministros_pendientes": 358,
+      "pct_avance_relevamiento": 3.5,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 113,
+      "pct_tarifa_social": 1.35,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16627,
+      "ctmtbt": "8511",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 356,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 356,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 16,
+      "pct_tarifa_social": 1.12,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 16133,
+      "ctmtbt": "0615",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 355,
+      "suministros_relevados": 6,
+      "suministros_pendientes": 349,
+      "pct_avance_relevamiento": 1.69,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 93,
+      "pct_tarifa_social": 5.63,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15863,
+      "ctmtbt": "0602",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 351,
+      "suministros_relevados": 6,
+      "suministros_pendientes": 345,
+      "pct_avance_relevamiento": 1.71,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 88,
+      "pct_tarifa_social": 11.11,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 9359,
+      "ctmtbt": "0078",
+      "agf_codigo": 9000,
+      "distrito_principal": "VILLA CARLOS PAZ",
+      "localidad_principal": "VILLA CARLOS PAZ",
+      "cant_suministros": 344,
+      "suministros_relevados": 2,
+      "suministros_pendientes": 342,
+      "pct_avance_relevamiento": 0.58,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 163,
+      "pct_tarifa_social": 1.45,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16007,
+      "ctmtbt": "0785",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 364,
+      "suministros_relevados": 23,
+      "suministros_pendientes": 341,
+      "pct_avance_relevamiento": 6.32,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 65,
+      "pct_tarifa_social": 11.81,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16031,
+      "ctmtbt": "1029",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 354,
+      "suministros_relevados": 15,
+      "suministros_pendientes": 339,
+      "pct_avance_relevamiento": 4.24,
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "parcelas_cortadas": 7,
+      "pct_tarifa_social": 4.24,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 15938,
+      "ctmtbt": "1338",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 347,
+      "suministros_relevados": 10,
+      "suministros_pendientes": 337,
+      "pct_avance_relevamiento": 2.88,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 84,
+      "pct_tarifa_social": 1.15,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 13433,
+      "ctmtbt": "4248",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 341,
+      "suministros_relevados": 4,
+      "suministros_pendientes": 337,
+      "pct_avance_relevamiento": 1.17,
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "parcelas_cortadas": 0,
+      "pct_tarifa_social": 0.59,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 15223,
+      "ctmtbt": "0286",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 336,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 336,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 53,
+      "pct_tarifa_social": 8.63,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16894,
+      "ctmtbt": "0151",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 340,
+      "suministros_relevados": 8,
+      "suministros_pendientes": 332,
+      "pct_avance_relevamiento": 2.35,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 219,
+      "pct_tarifa_social": 10.0,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16140,
+      "ctmtbt": "1010",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 332,
+      "suministros_relevados": 1,
+      "suministros_pendientes": 331,
+      "pct_avance_relevamiento": 0.3,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 47,
+      "pct_tarifa_social": 7.23,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 14241,
+      "ctmtbt": "0910",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 335,
+      "suministros_relevados": 4,
+      "suministros_pendientes": 331,
+      "pct_avance_relevamiento": 1.19,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 58,
+      "pct_tarifa_social": 9.85,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16032,
+      "ctmtbt": "1550",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 353,
+      "suministros_relevados": 27,
+      "suministros_pendientes": 326,
+      "pct_avance_relevamiento": 7.65,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 40,
+      "pct_tarifa_social": 0.28,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 13343,
+      "ctmtbt": "3056",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 351,
+      "suministros_relevados": 29,
+      "suministros_pendientes": 322,
+      "pct_avance_relevamiento": 8.26,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 52,
+      "pct_tarifa_social": 3.42,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15984,
+      "ctmtbt": "1100",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 340,
+      "suministros_relevados": 19,
+      "suministros_pendientes": 321,
+      "pct_avance_relevamiento": 5.59,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 74,
+      "pct_tarifa_social": 4.12,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 14232,
+      "ctmtbt": "2119",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 322,
+      "suministros_relevados": 1,
+      "suministros_pendientes": 321,
+      "pct_avance_relevamiento": 0.31,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 66,
+      "pct_tarifa_social": 12.42,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16701,
+      "ctmtbt": "8586",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 318,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 318,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 40,
+      "pct_tarifa_social": 1.57,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15979,
+      "ctmtbt": "1537",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 317,
+      "suministros_relevados": 3,
+      "suministros_pendientes": 314,
+      "pct_avance_relevamiento": 0.95,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 54,
+      "pct_tarifa_social": 5.05,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16639,
+      "ctmtbt": "8522",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 311,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 311,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 34,
+      "pct_tarifa_social": 8.04,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 16652,
+      "ctmtbt": "8537",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 310,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 310,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "parcelas_cortadas": 5,
+      "pct_tarifa_social": 0.65,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 15084,
+      "ctmtbt": "8005",
+      "agf_codigo": 1100,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "MALAGUEÑO",
+      "cant_suministros": 308,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 308,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "ALTA_LEVE (1-10 cortadas)",
+      "parcelas_cortadas": 5,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 16119,
+      "ctmtbt": "1929",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 312,
+      "suministros_relevados": 4,
+      "suministros_pendientes": 308,
+      "pct_avance_relevamiento": 1.28,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 54,
+      "pct_tarifa_social": 17.63,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16039,
+      "ctmtbt": "1555",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 327,
+      "suministros_relevados": 21,
+      "suministros_pendientes": 306,
+      "pct_avance_relevamiento": 6.42,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 58,
+      "pct_tarifa_social": 3.98,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15768,
+      "ctmtbt": "0885",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 313,
+      "suministros_relevados": 8,
+      "suministros_pendientes": 305,
+      "pct_avance_relevamiento": 2.56,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 53,
+      "pct_tarifa_social": 3.19,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 13585,
+      "ctmtbt": "1360",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 305,
+      "suministros_relevados": 2,
+      "suministros_pendientes": 303,
+      "pct_avance_relevamiento": 0.66,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 61,
+      "pct_tarifa_social": 8.85,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 12457,
+      "ctmtbt": "1809",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 301,
+      "suministros_relevados": 1,
+      "suministros_pendientes": 300,
+      "pct_avance_relevamiento": 0.33,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 52,
+      "pct_tarifa_social": 16.94,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15960,
+      "ctmtbt": "2006",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 302,
+      "suministros_relevados": 5,
+      "suministros_pendientes": 297,
+      "pct_avance_relevamiento": 1.66,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 77,
+      "pct_tarifa_social": 3.64,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16018,
+      "ctmtbt": "1531",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 313,
+      "suministros_relevados": 16,
+      "suministros_pendientes": 297,
+      "pct_avance_relevamiento": 5.11,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 62,
+      "pct_tarifa_social": 5.11,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 12690,
+      "ctmtbt": "0744",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 296,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 296,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 92,
+      "pct_tarifa_social": 5.41,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16714,
+      "ctmtbt": "8599",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 295,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 295,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 13,
+      "pct_tarifa_social": 0.68,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 15483,
+      "ctmtbt": "0177",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 295,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 295,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 88,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16038,
+      "ctmtbt": "1566",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 311,
+      "suministros_relevados": 18,
+      "suministros_pendientes": 293,
+      "pct_avance_relevamiento": 5.79,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 92,
+      "pct_tarifa_social": 1.93,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16139,
+      "ctmtbt": "1178",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 294,
+      "suministros_relevados": 2,
+      "suministros_pendientes": 292,
+      "pct_avance_relevamiento": 0.68,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 39,
+      "pct_tarifa_social": 8.5,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 14260,
+      "ctmtbt": "1113",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 289,
+      "suministros_relevados": 1,
+      "suministros_pendientes": 288,
+      "pct_avance_relevamiento": 0.35,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 77,
+      "pct_tarifa_social": 2.42,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 13466,
+      "ctmtbt": "0333",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 289,
+      "suministros_relevados": 2,
+      "suministros_pendientes": 287,
+      "pct_avance_relevamiento": 0.69,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 79,
+      "pct_tarifa_social": 10.38,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16653,
+      "ctmtbt": "8538",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 285,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 285,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 56,
+      "pct_tarifa_social": 2.46,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 11731,
+      "ctmtbt": "8002",
+      "agf_codigo": 4150,
+      "distrito_principal": "SANTIAGO TEMPLE",
+      "localidad_principal": "SANTIAGO TEMPLE",
+      "cant_suministros": 285,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 285,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 13,
+      "pct_tarifa_social": 6.32,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 13378,
+      "ctmtbt": "0248",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 284,
+      "suministros_relevados": 1,
+      "suministros_pendientes": 283,
+      "pct_avance_relevamiento": 0.35,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 60,
+      "pct_tarifa_social": 8.45,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 14126,
+      "ctmtbt": "1171",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 305,
+      "suministros_relevados": 22,
+      "suministros_pendientes": 283,
+      "pct_avance_relevamiento": 7.21,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 37,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16687,
+      "ctmtbt": "8572",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 282,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 282,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 45,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 12578,
+      "ctmtbt": "0704",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 282,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 282,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 85,
+      "pct_tarifa_social": 9.57,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 12907,
+      "ctmtbt": "1529",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 295,
+      "suministros_relevados": 15,
+      "suministros_pendientes": 280,
+      "pct_avance_relevamiento": 5.08,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 32,
+      "pct_tarifa_social": 2.37,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16322,
+      "ctmtbt": "8022",
+      "agf_codigo": 1100,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "MALAGUEÑO",
+      "cant_suministros": 276,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 276,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "parcelas_cortadas": 0,
+      "pct_tarifa_social": 14.86,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 15933,
+      "ctmtbt": "1361",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 282,
+      "suministros_relevados": 7,
+      "suministros_pendientes": 275,
+      "pct_avance_relevamiento": 2.48,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 99,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 14230,
+      "ctmtbt": "5300",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 277,
+      "suministros_relevados": 3,
+      "suministros_pendientes": 274,
+      "pct_avance_relevamiento": 1.08,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 80,
+      "pct_tarifa_social": 5.42,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16692,
+      "ctmtbt": "8577",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 273,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 273,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 55,
+      "pct_tarifa_social": 1.1,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 13520,
+      "ctmtbt": "1209",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 277,
+      "suministros_relevados": 5,
+      "suministros_pendientes": 272,
+      "pct_avance_relevamiento": 1.81,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 84,
+      "pct_tarifa_social": 10.11,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15744,
+      "ctmtbt": "0575",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 325,
+      "suministros_relevados": 53,
+      "suministros_pendientes": 272,
+      "pct_avance_relevamiento": 16.31,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 31,
+      "pct_tarifa_social": 0.31,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15479,
+      "ctmtbt": "0055",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 269,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 269,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 75,
+      "pct_tarifa_social": 0.37,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 16015,
+      "ctmtbt": "0121",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 273,
+      "suministros_relevados": 5,
+      "suministros_pendientes": 268,
+      "pct_avance_relevamiento": 1.83,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 205,
+      "pct_tarifa_social": 9.16,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 8367,
+      "ctmtbt": "0033",
+      "agf_codigo": 8000,
+      "distrito_principal": "ALTA GRACIA",
+      "localidad_principal": "ALTA GRACIA",
+      "cant_suministros": 275,
+      "suministros_relevados": 8,
+      "suministros_pendientes": 267,
+      "pct_avance_relevamiento": 2.91,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 83,
+      "pct_tarifa_social": 6.91,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 13418,
+      "ctmtbt": "2480",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 269,
+      "suministros_relevados": 2,
+      "suministros_pendientes": 267,
+      "pct_avance_relevamiento": 0.74,
+      "calidad_poligono": "ALTA_LIMPIO (0 cortadas)",
+      "parcelas_cortadas": 0,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 15487,
+      "ctmtbt": "5195",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 266,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 266,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 53,
+      "pct_tarifa_social": 0.0,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 15789,
+      "ctmtbt": "2121",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 269,
+      "suministros_relevados": 5,
+      "suministros_pendientes": 264,
+      "pct_avance_relevamiento": 1.86,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 48,
+      "pct_tarifa_social": 4.46,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 13197,
+      "ctmtbt": "5301",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 264,
+      "suministros_relevados": 1,
+      "suministros_pendientes": 263,
+      "pct_avance_relevamiento": 0.38,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 64,
+      "pct_tarifa_social": 11.36,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 9688,
+      "ctmtbt": "0493",
+      "agf_codigo": 6000,
+      "distrito_principal": "RIO CUARTO",
+      "localidad_principal": "RIO CUARTO",
+      "cant_suministros": 266,
+      "suministros_relevados": 4,
+      "suministros_pendientes": 262,
+      "pct_avance_relevamiento": 1.5,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 111,
+      "pct_tarifa_social": 6.39,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 12606,
+      "ctmtbt": "1467",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 262,
+      "suministros_relevados": 0,
+      "suministros_pendientes": 262,
+      "pct_avance_relevamiento": 0.0,
+      "calidad_poligono": "MEDIA_MODERADO (11-30 cortadas)",
+      "parcelas_cortadas": 14,
+      "pct_tarifa_social": 0.76,
+      "prioridad_relevamiento_futuro": "1_RELEVAMIENTO_INMEDIATO"
+    },
+    {
+      "id": 13140,
+      "ctmtbt": "1054",
+      "agf_codigo": 1000,
+      "distrito_principal": "CORDOBA",
+      "localidad_principal": "CORDOBA",
+      "cant_suministros": 267,
+      "suministros_relevados": 7,
+      "suministros_pendientes": 260,
+      "pct_avance_relevamiento": 2.62,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 54,
+      "pct_tarifa_social": 9.36,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
+    },
+    {
+      "id": 9356,
+      "ctmtbt": "0074",
+      "agf_codigo": 9000,
+      "distrito_principal": "VILLA CARLOS PAZ",
+      "localidad_principal": "VILLA CARLOS PAZ",
+      "cant_suministros": 261,
+      "suministros_relevados": 1,
+      "suministros_pendientes": 260,
+      "pct_avance_relevamiento": 0.38,
+      "calidad_poligono": "BAJA_CONFLICTO (>30 cortadas)",
+      "parcelas_cortadas": 194,
+      "pct_tarifa_social": 4.6,
+      "prioridad_relevamiento_futuro": "3_SANEAMIENTO_TOPOLOGICO_PREVIO"
     }
   ]
 };

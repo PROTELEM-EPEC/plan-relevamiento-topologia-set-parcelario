@@ -81,3 +81,4 @@ Los **20 Planes Principales** de relevamiento de Córdoba Capital abarcan un tot
 3. **Planes Especiales de Relevamiento de Ingeniería (TLMD, ZALT, ZSLEC)**:
    - No deben ser relevados por cuadrillas residenciales convencionales.
    - Requieren personal técnico especializado para medidores indirectos con transformadores de corriente (TI) en Grandes Clientes o relevamiento de tableros de comando en Alumbrado Público.
+

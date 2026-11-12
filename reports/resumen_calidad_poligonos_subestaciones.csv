@@ -1,0 +1,5 @@
+calidad_poligono,total_sets,sumis_totales,sumis_relevados,sumis_pendientes,parcelas_cortadas_totales,compacidad_media,pct_sets
+ALTA_LEVE (1-10 cortadas),1278,40634,35611,18944,9167,0.5635258215962442,24.13
+ALTA_LIMPIO (0 cortadas),963,12594,14468,5776,0,0.6180985739750446,18.18
+BAJA_CONFLICTO (>30 cortadas),1923,321611,301705,82453,133457,0.5476429017160686,36.31
+MEDIA_MODERADO (11-30 cortadas),973,99947,84931,31294,21127,0.5618350462487153,18.37

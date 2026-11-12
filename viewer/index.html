@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auditoría Topológica SET & Catastro Parcelario EPEC | PROTELEM</title>
+  <title>Auditoría Topológica SET & Plan de Relevamiento Futuro EPEC | PROTELEM</title>
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome -->
@@ -30,15 +30,15 @@
       <div>
         <h1 class="font-bold text-lg text-white tracking-wide flex items-center gap-2">
           PROTELEM <span class="text-xs px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 font-mono border border-amber-500/30">EPEC</span>
-          <span class="text-xs font-normal text-slate-400">| Topología de Subestaciones & Fusión Parcelaria</span>
+          <span class="text-xs font-normal text-slate-400">| Topología de Subestaciones, Calidad & Plan de Relevamiento</span>
         </h1>
-        <p class="text-xs text-slate-400 font-mono">Arquetipo A: GIS, Catastro y Redes Eléctricas • Provincial</p>
+        <p class="text-xs text-slate-400 font-mono">Arquetipo A: GIS, Catastro y Redes Eléctricas • georef.relevamiento Integrado</p>
       </div>
     </div>
     <div class="flex items-center gap-3">
       <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        WFS maaysp-ws.cba.gov.ar Sincronizado
+        georef.relevamiento Sincronizado
       </span>
       <span class="text-xs text-slate-400 bg-slate-800/60 px-3 py-1 rounded-lg border border-slate-700">
         <i class="fa-regular fa-clock mr-1 text-slate-400"></i> Noviembre 2026
@@ -49,7 +49,7 @@
   <!-- Main Content -->
   <main class="flex-1 p-6 space-y-6 max-w-7xl mx-auto w-full">
 
-    <!-- KPI Grid -->
+    <!-- KPI Grid Fila 1: Topología y Catastro -->
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
       <!-- Total SETs -->
       <div class="bg-slate-800/50 backdrop-blur border border-slate-700/60 rounded-xl p-5 hover:border-slate-600 transition">
@@ -112,6 +112,69 @@
       </div>
     </div>
 
+    <!-- KPI Grid Fila 2: Plan de Relevamiento Futuro & Avance -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <!-- Puntos Totales 20 Planes -->
+      <div class="bg-slate-800/50 backdrop-blur border border-indigo-500/30 rounded-xl p-5 hover:border-indigo-500/50 transition">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold text-indigo-300 uppercase tracking-wider">Universo 20 Planes</span>
+          <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+            <i class="fa-solid fa-clipboard-list text-sm"></i>
+          </div>
+        </div>
+        <div class="mt-3 flex items-baseline gap-2">
+          <span class="text-3xl font-extrabold text-indigo-300" id="kpi-total-planes">585,819</span>
+          <span class="text-xs text-indigo-400">suministros</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">Distrito 1 (Córdoba Capital)</p>
+      </div>
+
+      <!-- Relevados Históricos -->
+      <div class="bg-slate-800/50 backdrop-blur border border-emerald-500/30 rounded-xl p-5 hover:border-emerald-500/50 transition">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold text-emerald-300 uppercase tracking-wider">Relevamiento Realizado</span>
+          <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+            <i class="fa-solid fa-check text-sm"></i>
+          </div>
+        </div>
+        <div class="mt-3 flex items-baseline gap-2">
+          <span class="text-3xl font-extrabold text-emerald-400" id="kpi-relevados-planes">348,673</span>
+          <span class="text-xs text-emerald-400 font-semibold" id="kpi-pct-avance">59.52% avance</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">georef.relevamiento histórico</p>
+      </div>
+
+      <!-- Backlog Pendiente Futuro -->
+      <div class="bg-slate-800/50 backdrop-blur border border-cyan-500/30 rounded-xl p-5 hover:border-cyan-500/50 transition">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold text-cyan-300 uppercase tracking-wider">Backlog a Relevar</span>
+          <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+            <i class="fa-solid fa-person-digging text-sm"></i>
+          </div>
+        </div>
+        <div class="mt-3 flex items-baseline gap-2">
+          <span class="text-3xl font-extrabold text-cyan-400" id="kpi-pendientes-planes">237,146</span>
+          <span class="text-xs text-cyan-300/80 font-medium">puntos</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">220.4k CC (93%) • 15.9k Tarifa Social (7%)</p>
+      </div>
+
+      <!-- SETs Bloqueadas Topología -->
+      <div class="bg-slate-800/50 backdrop-blur border border-red-500/30 rounded-xl p-5 hover:border-red-500/50 transition">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-semibold text-red-300 uppercase tracking-wider">Bloqueo Topológico SETs</span>
+          <div class="w-8 h-8 rounded-lg bg-red-500/10 text-red-400 flex items-center justify-center">
+            <i class="fa-solid fa-triangle-exclamation text-sm"></i>
+          </div>
+        </div>
+        <div class="mt-3 flex items-baseline gap-2">
+          <span class="text-3xl font-extrabold text-red-400" id="kpi-sets-bloqueadas">449</span>
+          <span class="text-xs text-red-300/80 font-medium">78.9k sumis</span>
+        </div>
+        <p class="text-xs text-slate-400 mt-1">Polígonos cortan parcelas (Corregir en GIS)</p>
+      </div>
+    </div>
+
     <!-- Charts Row -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
       <!-- Categorías de Subestaciones -->
@@ -139,26 +202,75 @@
     <div class="bg-slate-800/50 backdrop-blur border border-slate-700/60 rounded-xl overflow-hidden">
       <!-- Tabs Header -->
       <div class="border-b border-slate-700/80 px-6 py-3 flex flex-wrap items-center justify-between gap-4 bg-slate-900/40">
-        <div class="flex items-center gap-2">
-          <button id="tab-btn-sets" onclick="switchTab('sets')" class="px-4 py-2 text-xs font-semibold rounded-lg bg-indigo-600 text-white transition">
-            <i class="fa-solid fa-network-wired mr-1.5"></i> Subestaciones Clasificadas
+        <div class="flex flex-wrap items-center gap-2">
+          <button id="tab-btn-planes" onclick="switchTab('planes')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-indigo-600 text-white transition">
+            <i class="fa-solid fa-list-check mr-1.5 text-emerald-400"></i> Planes de Relevamiento (Avance)
           </button>
-          <button id="tab-btn-cortadas" onclick="switchTab('cortadas')" class="px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
-            <i class="fa-solid fa-scissors mr-1.5 text-amber-400"></i> Log Excepciones: Parcelas Cortadas
+          <button id="tab-btn-prio" onclick="switchTab('prio')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
+            <i class="fa-solid fa-bullseye mr-1.5 text-rose-400"></i> Matriz de Priorización SETs
           </button>
-          <button id="tab-btn-dups" onclick="switchTab('dups')" class="px-4 py-2 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
-            <i class="fa-solid fa-copy mr-1.5 text-blue-400"></i> Parcelas Duplicadas en Manzana
+          <button id="tab-btn-sets" onclick="switchTab('sets')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
+            <i class="fa-solid fa-network-wired mr-1.5 text-blue-400"></i> Subestaciones Clasificadas
+          </button>
+          <button id="tab-btn-cortadas" onclick="switchTab('cortadas')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
+            <i class="fa-solid fa-scissors mr-1.5 text-amber-400"></i> Parcelas Cortadas Frontera
+          </button>
+          <button id="tab-btn-dups" onclick="switchTab('dups')" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 transition">
+            <i class="fa-solid fa-copy mr-1.5 text-purple-400"></i> Duplicadas en Manzana
           </button>
         </div>
         <!-- Search Input -->
         <div class="relative w-full sm:w-64">
           <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-xs text-slate-400"></i>
-          <input type="text" id="searchInput" oninput="filterActiveTable()" placeholder="Buscar SET, CT, Nomenclatura, Barrio..." class="w-full bg-slate-950/80 border border-slate-700 rounded-lg pl-9 pr-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
+          <input type="text" id="searchInput" oninput="filterActiveTable()" placeholder="Buscar Plan, SET, CT, Barrio, Nomenclatura..." class="w-full bg-slate-950/80 border border-slate-700 rounded-lg pl-9 pr-3 py-1.5 text-xs text-slate-200 focus:outline-none focus:border-indigo-500">
         </div>
       </div>
 
+      <!-- Table Container: Planes de Relevamiento -->
+      <div id="tab-content-planes" class="overflow-x-auto max-h-[500px] custom-scrollbar">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead class="bg-slate-950/90 text-slate-400 sticky top-0 z-10 border-b border-slate-800">
+            <tr>
+              <th class="py-3 px-4 font-semibold">Plan de Lectura</th>
+              <th class="py-3 px-4 font-semibold">Total Puntos</th>
+              <th class="py-3 px-4 font-semibold">Relevados Históricos</th>
+              <th class="py-3 px-4 font-semibold">% Avance</th>
+              <th class="py-3 px-4 font-semibold">Pendientes Totales</th>
+              <th class="py-3 px-4 font-semibold">Pendientes CC</th>
+              <th class="py-3 px-4 font-semibold">Pendientes Tarifa Social</th>
+              <th class="py-3 px-4 font-semibold">Diagnóstico Operativo</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-planes" class="divide-y divide-slate-800 text-slate-300">
+            <!-- Dynamic Content -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Table Container: Matriz de Priorización SETs -->
+      <div id="tab-content-prio" class="hidden overflow-x-auto max-h-[500px] custom-scrollbar">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead class="bg-slate-950/90 text-slate-400 sticky top-0 z-10 border-b border-slate-800">
+            <tr>
+              <th class="py-3 px-4 font-semibold">CTMTBT / ID</th>
+              <th class="py-3 px-4 font-semibold">Localidad / Distrito</th>
+              <th class="py-3 px-4 font-semibold">Total Sumis</th>
+              <th class="py-3 px-4 font-semibold">Relevados</th>
+              <th class="py-3 px-4 font-semibold">Pendientes</th>
+              <th class="py-3 px-4 font-semibold">% Avance</th>
+              <th class="py-3 px-4 font-semibold">Calidad Polígono</th>
+              <th class="py-3 px-4 font-semibold">Parcelas Cortadas</th>
+              <th class="py-3 px-4 font-semibold">Prioridad Relevamiento</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-prio" class="divide-y divide-slate-800 text-slate-300">
+            <!-- Dynamic Content -->
+          </tbody>
+        </table>
+      </div>
+
       <!-- Table Container: Subestaciones -->
-      <div id="tab-content-sets" class="overflow-x-auto max-h-[500px] custom-scrollbar">
+      <div id="tab-content-sets" class="hidden overflow-x-auto max-h-[500px] custom-scrollbar">
         <table class="w-full text-left text-xs border-collapse">
           <thead class="bg-slate-950/90 text-slate-400 sticky top-0 z-10 border-b border-slate-800">
             <tr>
@@ -232,13 +344,19 @@
   <!-- Script Logic -->
   <script>
     const data = window.DASHBOARD_DATA;
-    let activeTab = 'sets';
+    let activeTab = 'planes';
 
     // Populate KPIs
     document.getElementById('kpi-sets').textContent = (data.kpis.total_subestaciones || 0).toLocaleString();
     document.getElementById('kpi-parcelas-set').textContent = (data.kpis.total_parcelas_en_set || 0).toLocaleString();
     document.getElementById('kpi-cortadas').textContent = (data.kpis.total_parcelas_cortadas_frontera || 0).toLocaleString();
     document.getElementById('kpi-social').textContent = (data.kpis.sets_sensibilidad_social_alta || 0).toLocaleString();
+
+    // KPIs Fila 2
+    document.getElementById('kpi-total-planes').textContent = (data.kpis.total_20_planes || 0).toLocaleString();
+    document.getElementById('kpi-relevados-planes').textContent = (data.kpis.relevados_20_planes || 0).toLocaleString();
+    document.getElementById('kpi-pct-avance').textContent = `${data.kpis.pct_avance_20_planes || 0}% avance`;
+    document.getElementById('kpi-pendientes-planes').textContent = (data.kpis.pendientes_20_planes || 0).toLocaleString();
 
     // Render Charts
     function renderCharts() {
@@ -300,7 +418,66 @@
 
     // Populate Tables
     function renderTables() {
-      // Subestaciones
+      // 1. Planes de Relevamiento
+      const tbodyPlanes = document.getElementById('tbody-planes');
+      tbodyPlanes.innerHTML = (data.planes_relevamiento || []).map(p => {
+        let diagBadge = 'bg-slate-800 text-slate-300';
+        if (p.diagnostico_operativo === 'RELEVAMIENTO_MASIVO_CC_INMEDIATO') {
+          diagBadge = 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold';
+        } else if (p.diagnostico_operativo === 'SENSIBILIDAD_SOCIAL_PRIORITARIA') {
+          diagBadge = 'bg-rose-500/20 text-rose-300 border border-rose-500/40 font-semibold';
+        } else if (p.diagnostico_operativo === 'FASE_FINAL_REMANENTES') {
+          diagBadge = 'bg-blue-500/20 text-blue-300 border border-blue-500/40';
+        }
+        return `
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="py-2.5 px-4 font-mono font-bold text-white">${p.plan}</td>
+            <td class="py-2.5 px-4 font-mono">${(p.total_puntos || 0).toLocaleString()}</td>
+            <td class="py-2.5 px-4 font-mono text-emerald-400 font-semibold">${(p.total_relevados || 0).toLocaleString()}</td>
+            <td class="py-2.5 px-4 font-mono font-bold ${p.pct_avance >= 80 ? 'text-emerald-400' : (p.pct_avance < 10 ? 'text-red-400' : 'text-amber-400')}">${p.pct_avance}%</td>
+            <td class="py-2.5 px-4 font-mono font-bold text-cyan-300">${(p.total_pendientes || 0).toLocaleString()}</td>
+            <td class="py-2.5 px-4 font-mono text-slate-300">${(p.pendientes_cc || 0).toLocaleString()}</td>
+            <td class="py-2.5 px-4 font-mono text-rose-400 font-semibold">${(p.pendientes_tarifa_social || 0).toLocaleString()}</td>
+            <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded text-[10px] ${diagBadge}">${p.diagnostico_operativo}</span></td>
+          </tr>
+        `;
+      }).join('');
+
+      // 2. Matriz de Priorización SETs
+      const tbodyPrio = document.getElementById('tbody-prio');
+      tbodyPrio.innerHTML = (data.subestaciones_top_pendientes || []).map(s => {
+        let prioBadge = 'bg-slate-800 text-slate-300';
+        if (s.prioridad_relevamiento_futuro === '1_RELEVAMIENTO_INMEDIATO') {
+          prioBadge = 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold';
+        } else if (s.prioridad_relevamiento_futuro === '2_SENSIBILIDAD_SOCIAL') {
+          prioBadge = 'bg-rose-500/20 text-rose-300 border border-rose-500/40 font-semibold';
+        } else if (s.prioridad_relevamiento_futuro === '3_SANEAMIENTO_TOPOLOGICO_PREVIO') {
+          prioBadge = 'bg-red-500/20 text-red-300 border border-red-500/40 font-bold';
+        } else if (s.prioridad_relevamiento_futuro === '4_AVANZADA_O_COMPLETADA') {
+          prioBadge = 'bg-blue-500/20 text-blue-300 border border-blue-500/40';
+        }
+
+        let calBadge = 'text-slate-400';
+        if (s.calidad_poligono.includes('ALTA')) calBadge = 'text-emerald-400 font-medium';
+        else if (s.calidad_poligono.includes('BAJA')) calBadge = 'text-red-400 font-bold';
+        else calBadge = 'text-amber-400';
+
+        return `
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="py-2.5 px-4 font-mono font-medium text-white">#${s.id} <span class="text-amber-400 font-semibold">[CT ${s.ctmtbt || 'S/D'}]</span></td>
+            <td class="py-2.5 px-4 text-slate-300">${s.localidad_principal || 'N/A'} <span class="text-slate-500">(${s.distrito_principal || ''})</span></td>
+            <td class="py-2.5 px-4 font-mono font-semibold text-white">${(s.cant_suministros || 0).toLocaleString()}</td>
+            <td class="py-2.5 px-4 font-mono text-emerald-400">${(s.suministros_relevados || 0).toLocaleString()}</td>
+            <td class="py-2.5 px-4 font-mono font-bold text-cyan-300">${(s.suministros_pendientes || 0).toLocaleString()}</td>
+            <td class="py-2.5 px-4 font-mono">${s.pct_avance_relevamiento}%</td>
+            <td class="py-2.5 px-4 ${calBadge}">${s.calidad_poligono}</td>
+            <td class="py-2.5 px-4 font-mono text-amber-300 font-semibold">${s.parcelas_cortadas}</td>
+            <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded text-[10px] ${prioBadge}">${s.prioridad_relevamiento_futuro}</span></td>
+          </tr>
+        `;
+      }).join('');
+
+      // 3. Subestaciones
       const tbodySets = document.getElementById('tbody-sets');
       tbodySets.innerHTML = (data.top_subestaciones || []).map(s => {
         const isSocial = s.pct_tarifa_social >= 20.0;
@@ -321,7 +498,7 @@
         `;
       }).join('');
 
-      // Parcelas Cortadas
+      // 4. Parcelas Cortadas
       const tbodyCortadas = document.getElementById('tbody-cortadas');
       tbodyCortadas.innerHTML = (data.muestra_parcelas_cortadas || []).map(p => `
         <tr class="hover:bg-slate-800/40 transition">
@@ -335,7 +512,7 @@
         </tr>
       `).join('');
 
-      // Parcelas Duplicadas
+      // 5. Parcelas Duplicadas
       const tbodyDups = document.getElementById('tbody-dups');
       tbodyDups.innerHTML = (data.muestra_parcelas_duplicadas || []).map(d => `
         <tr class="hover:bg-slate-800/40 transition">
@@ -351,16 +528,22 @@
     // Switch Tabs
     function switchTab(tab) {
       activeTab = tab;
-      ['sets', 'cortadas', 'dups'].forEach(t => {
-        document.getElementById(`tab-content-${t}`).classList.add('hidden');
+      ['planes', 'prio', 'sets', 'cortadas', 'dups'].forEach(t => {
+        const el = document.getElementById(`tab-content-${t}`);
+        if (el) el.classList.add('hidden');
         const btn = document.getElementById(`tab-btn-${t}`);
-        btn.classList.remove('bg-indigo-600', 'text-white');
-        btn.classList.add('bg-slate-800', 'text-slate-300');
+        if (btn) {
+          btn.classList.remove('bg-indigo-600', 'text-white');
+          btn.classList.add('bg-slate-800', 'text-slate-300');
+        }
       });
-      document.getElementById(`tab-content-${tab}`).classList.remove('hidden');
+      const activeContent = document.getElementById(`tab-content-${tab}`);
+      if (activeContent) activeContent.classList.remove('hidden');
       const activeBtn = document.getElementById(`tab-btn-${tab}`);
-      activeBtn.classList.remove('bg-slate-800', 'text-slate-300');
-      activeBtn.classList.add('bg-indigo-600', 'text-white');
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-slate-800', 'text-slate-300');
+        activeBtn.classList.add('bg-indigo-600', 'text-white');
+      }
       filterActiveTable();
     }
 
@@ -368,6 +551,7 @@
     function filterActiveTable() {
       const q = document.getElementById('searchInput').value.toLowerCase().trim();
       const tbody = document.getElementById(`tbody-${activeTab}`);
+      if (!tbody) return;
       const rows = tbody.getElementsByTagName('tr');
       for (let i = 0; i < rows.length; i++) {
         const text = rows[i].textContent.toLowerCase();
@@ -383,4 +567,3 @@
   </script>
 </body>
 </html>
-
