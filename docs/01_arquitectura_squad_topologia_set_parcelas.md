@@ -56,3 +56,4 @@ WBS-SET-03 [Operador 3] -> Generación de datos, tablero interactivo y verificac
     * Output: viewer/index.html + viewer/data/dashboard_data.js
     * QA: Validado en navegador, responsive, visualización Canvas y filtros en tiempo real.
 ```
+

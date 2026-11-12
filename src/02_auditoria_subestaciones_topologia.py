@@ -163,3 +163,4 @@ df_clasif.to_parquet(clasif_parquet, index=False)
 print(f"   -> Capa parquet guardada en: {clasif_parquet}")
 
 print(f"=== AUDITORÍA TOPOLÓGICA Y CLASIFICACIÓN COMPLETADA EN {time.time() - start_time:.2f}s ===")
+

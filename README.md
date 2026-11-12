@@ -90,3 +90,4 @@ Abrir [`viewer/index.html`](viewer/index.html) directamente en cualquier navegad
 - **Operador 1 (Core GIS)**: `Gemini 2.5 Flash` (Top-2) - Geoprocesamiento Shapely / GeoPandas y pipeline de fusión.
 - **Operador 2 (Dominio Catastro & SET)**: `Gemini 2.5 Flash` (Top-2) - Cruce topológico de subestaciones y Tarifa Social.
 - **Operador 3 (QA & UX)**: `Gemini 2.5 Flash` (Top-2) - Auditoría de excepciones, backups y visor interactivo.
+

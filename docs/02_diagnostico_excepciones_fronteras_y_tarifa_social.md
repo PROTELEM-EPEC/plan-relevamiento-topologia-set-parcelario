@@ -38,3 +38,4 @@ Se detectaron **621 subestaciones** donde la Tarifa Social representa **$\ge 20\
 | **PEQUEÑA** | $1 - 149$ suministros | `3,164` | 59.74% | Loteos suburbanos, zonas rurales o transformadores aéreos |
 | **SIN_SUMINISTROS** | $0$ suministros en polígono | `874` | 16.50% | Polígonos de reserva, industriales puros o sin cruce espacial |
 | **TOTAL** | - | **5,296** | **100.0%** | **Parque Provincial Analizado** |
+

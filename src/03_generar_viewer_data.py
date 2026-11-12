@@ -86,3 +86,4 @@ with open(out_js, 'w', encoding='utf-8') as f:
     f.write(f"window.DASHBOARD_DATA = {json.dumps(payload, ensure_ascii=False, indent=2)};\n")
 
 print(f"   -> Dataset generado exitosamente en: {out_js} ({os.path.getsize(out_js)/(1024):.1f} KB)")
+

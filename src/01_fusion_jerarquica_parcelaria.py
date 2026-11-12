@@ -90,3 +90,4 @@ df_parcelas_unicas.to_parquet(output_parcelas, index=False)
 print(f"   Capa guardada en: {output_parcelas} ({os.path.getsize(output_parcelas)/(1024*1024):.2f} MB)")
 
 print(f"=== FUSIÓN Y AUDITORÍA PARCELARIA COMPLETADA EN {time.time() - start_time:.2f}s ===")
+
