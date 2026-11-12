@@ -45,3 +45,4 @@ El orden de avance propuesto prioriza primero los distritos con **$\ge 98\%$ de 
   * Durante los primeros **10 meses y medio** (Dic-2026 a Oct-2027), las cuadrillas estarán concentradas exclusivamente en **Planes 14, 15 y 08** (zonas urbanas centrales con polígonos limpios de subestaciones).
   * Esta ventana temporal brinda al equipo de gabinete de GIS el tiempo necesario para **redefinir y corregir los límites perimetrales de las 449 subestaciones en conflicto topológico** (Cuadrante 3, con 78.898 suministros) en los Planes 07, 11 y 09.
   * Cuando las cuadrillas lleguen en Noviembre de 2027 al Plan 07 y en Febrero de 2028 al Plan 11, los planos y polígonos de las subestaciones estarán 100% saneados, **eliminando el riesgo de imputaciones erróneas de medidores a transformadores**.
+

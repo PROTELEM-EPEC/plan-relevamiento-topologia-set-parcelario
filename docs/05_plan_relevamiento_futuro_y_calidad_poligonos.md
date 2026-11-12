@@ -87,3 +87,4 @@ Cruzando el volumen pendiente, la calidad del polígono y la concentración de T
 
 4. **Etapa 4 - Barrido Sistemático de Remanentes (12 Planes con > 80% avance)**:
    - Asignar cuadrillas ligeras para el cierre de los 33.376 puntos remanentes en los 12 planes avanzados.
+

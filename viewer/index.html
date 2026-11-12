@@ -438,191 +438,229 @@
 
   <!-- Script Logic -->
   <script>
-    const data = window.DASHBOARD_DATA;
+    const data = window.DASHBOARD_DATA || {};
     let activeTab = 'planes';
+    let selectedDiagnostico = 'TODOS';
 
-    // Populate KPIs
-    document.getElementById('kpi-sets').textContent = (data.kpis.total_subestaciones || 0).toLocaleString();
-    document.getElementById('kpi-parcelas-set').textContent = (data.kpis.total_parcelas_en_set || 0).toLocaleString();
-    document.getElementById('kpi-cortadas').textContent = (data.kpis.total_parcelas_cortadas_frontera || 0).toLocaleString();
-    document.getElementById('kpi-social').textContent = (data.kpis.sets_sensibilidad_social_alta || 0).toLocaleString();
+    // Populate KPIs de forma segura
+    function initKPIs() {
+      if (!data || !data.kpis) return;
+      const setTxt = (id, val) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = val;
+      };
+      setTxt('kpi-sets', (data.kpis.total_subestaciones || 0).toLocaleString());
+      setTxt('kpi-parcelas-set', (data.kpis.total_parcelas_en_set || 0).toLocaleString());
+      setTxt('kpi-cortadas', (data.kpis.total_parcelas_cortadas_frontera || 0).toLocaleString());
+      setTxt('kpi-social', (data.kpis.sets_sensibilidad_social_alta || 0).toLocaleString());
 
-    // KPIs Fila 2
-    document.getElementById('kpi-total-planes').textContent = (data.kpis.total_20_planes || 0).toLocaleString();
-    document.getElementById('kpi-relevados-planes').textContent = (data.kpis.relevados_20_planes || 0).toLocaleString();
-    document.getElementById('kpi-pct-avance').textContent = `${data.kpis.pct_avance_20_planes || 0}% avance`;
-    document.getElementById('kpi-pendientes-planes').textContent = (data.kpis.pendientes_20_planes || 0).toLocaleString();
+      // KPIs Fila 2
+      setTxt('kpi-total-planes', (data.kpis.total_20_planes || 0).toLocaleString());
+      setTxt('kpi-relevados-planes', (data.kpis.relevados_20_planes || 0).toLocaleString());
+      setTxt('kpi-pct-avance', `${data.kpis.pct_avance_20_planes || 0}% avance`);
+      setTxt('kpi-pendientes-planes', (data.kpis.pendientes_20_planes || 0).toLocaleString());
+      setTxt('kpi-sets-bloqueadas', (data.kpis.sets_bloqueadas_calidad_baja || 449).toLocaleString());
+    }
 
     // Render Charts
     function renderCharts() {
+      if (typeof Chart === 'undefined') {
+        console.warn('Chart.js no está disponible.');
+        return;
+      }
+
       // Donut Chart: Categorías SET
-      const ctxCat = document.getElementById('chartCategorias').getContext('2d');
-      const cats = data.distribucion_categorias || {};
-      new Chart(ctxCat, {
-        type: 'doughnut',
-        data: {
-          labels: Object.keys(cats),
-          datasets: [{
-            data: Object.values(cats),
-            backgroundColor: ['#6366f1', '#3b82f6', '#10b981', '#f59e0b', '#64748b'],
-            borderWidth: 0
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: { position: 'bottom', labels: { color: '#94a3b8', boxWidth: 10, font: { size: 10 } } }
-          }
+      try {
+        const ctxCatEl = document.getElementById('chartCategorias');
+        if (ctxCatEl) {
+          const ctxCat = ctxCatEl.getContext('2d');
+          const cats = data.distribucion_categorias || {};
+          new Chart(ctxCat, {
+            type: 'doughnut',
+            data: {
+              labels: Object.keys(cats),
+              datasets: [{
+                data: Object.values(cats),
+                backgroundColor: ['#6366f1', '#3b82f6', '#10b981', '#f59e0b', '#64748b'],
+                borderWidth: 0
+              }]
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              plugins: {
+                legend: { position: 'bottom', labels: { color: '#94a3b8', boxWidth: 10, font: { size: 10 } } }
+              }
+            }
+          });
         }
-      });
+      } catch (e) {
+        console.error('Error al inicializar chartCategorias:', e);
+      }
 
       // Bar Chart: Top Tarifa Social
-      const ctxSoc = document.getElementById('chartSocial').getContext('2d');
-      const topSoc = (data.top_tarifa_social || []).slice(0, 10);
-      new Chart(ctxSoc, {
-        type: 'bar',
-        data: {
-          labels: topSoc.map(s => `CT ${s.ctmtbt || s.id}`),
-          datasets: [
-            {
-              label: 'Tarifa Social',
-              data: topSoc.map(s => s.cant_tarifa_social),
-              backgroundColor: '#f43f5e'
+      try {
+        const ctxSocEl = document.getElementById('chartSocial');
+        if (ctxSocEl) {
+          const ctxSoc = ctxSocEl.getContext('2d');
+          const topSoc = (data.top_tarifa_social || []).slice(0, 10);
+          new Chart(ctxSoc, {
+            type: 'bar',
+            data: {
+              labels: topSoc.map(s => `CT ${s.ctmtbt || s.id}`),
+              datasets: [
+                {
+                  label: 'Tarifa Social',
+                  data: topSoc.map(s => s.cant_tarifa_social),
+                  backgroundColor: '#f43f5e'
+                },
+                {
+                  label: 'Total Suministros',
+                  data: topSoc.map(s => s.cant_suministros),
+                  backgroundColor: '#3b82f6'
+                }
+              ]
             },
-            {
-              label: 'Total Suministros',
-              data: topSoc.map(s => s.cant_suministros),
-              backgroundColor: '#3b82f6'
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              scales: {
+                x: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } },
+                y: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { color: '#1e293b' } }
+              },
+              plugins: {
+                legend: { position: 'top', labels: { color: '#94a3b8', font: { size: 10 } } }
+              }
             }
-          ]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          scales: {
-            x: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { display: false } },
-            y: { ticks: { color: '#94a3b8', font: { size: 10 } }, grid: { color: '#1e293b' } }
-          },
-          plugins: {
-            legend: { position: 'top', labels: { color: '#94a3b8', font: { size: 10 } } }
-          }
+          });
         }
-      });
+      } catch (e) {
+        console.error('Error al inicializar chartSocial:', e);
+      }
     }
 
     // Populate Tables
     function renderTables() {
       // 1. Planes de Relevamiento
       const tbodyPlanes = document.getElementById('tbody-planes');
-      tbodyPlanes.innerHTML = (data.planes_relevamiento || []).map(p => {
-        let diagBadge = 'bg-slate-800 text-slate-300';
-        if (p.diagnostico_operativo === 'RELEVAMIENTO_MASIVO_CC_INMEDIATO') {
-          diagBadge = 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold';
-        } else if (p.diagnostico_operativo === 'SENSIBILIDAD_SOCIAL_PRIORITARIA') {
-          diagBadge = 'bg-rose-500/20 text-rose-300 border border-rose-500/40 font-semibold';
-        } else if (p.diagnostico_operativo === 'FASE_FINAL_REMANENTES') {
-          diagBadge = 'bg-blue-500/20 text-blue-300 border border-blue-500/40';
-        }
-        return `
-          <tr class="hover:bg-slate-800/40 transition" data-diagnostico="${p.diagnostico_operativo}">
-            <td class="py-2.5 px-4 font-mono font-bold text-white">${p.plan}</td>
-            <td class="py-2.5 px-4 font-mono">${(p.total_puntos || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4 font-mono text-emerald-400 font-semibold">${(p.total_relevados || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4 font-mono font-bold ${p.pct_avance >= 80 ? 'text-emerald-400' : (p.pct_avance < 10 ? 'text-red-400' : 'text-amber-400')}">${p.pct_avance}%</td>
-            <td class="py-2.5 px-4 font-mono font-bold text-cyan-300">${(p.total_pendientes || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4 font-mono text-slate-300">${(p.pendientes_cc || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4 font-mono text-rose-400 font-semibold">${(p.pendientes_tarifa_social || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded text-[10px] ${diagBadge}">${p.diagnostico_operativo}</span></td>
-          </tr>
-        `;
-      }).join('');
+      if (tbodyPlanes && data.planes_relevamiento) {
+        tbodyPlanes.innerHTML = data.planes_relevamiento.map(p => {
+          let diagBadge = 'bg-slate-800 text-slate-300';
+          if (p.diagnostico_operativo === 'RELEVAMIENTO_MASIVO_CC_INMEDIATO') {
+            diagBadge = 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold';
+          } else if (p.diagnostico_operativo === 'SENSIBILIDAD_SOCIAL_PRIORITARIA') {
+            diagBadge = 'bg-rose-500/20 text-rose-300 border border-rose-500/40 font-semibold';
+          } else if (p.diagnostico_operativo === 'FASE_FINAL_REMANENTES') {
+            diagBadge = 'bg-blue-500/20 text-blue-300 border border-blue-500/40';
+          } else if (p.diagnostico_operativo === 'RELEVAMIENTO_MIXTO_ESTANDAR') {
+            diagBadge = 'bg-amber-500/20 text-amber-300 border border-amber-500/40';
+          }
+          return `
+            <tr class="hover:bg-slate-800/40 transition" data-diagnostico="${p.diagnostico_operativo}">
+              <td class="py-2.5 px-4 font-mono font-bold text-white">${p.plan}</td>
+              <td class="py-2.5 px-4 font-mono">${(p.total_puntos || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4 font-mono text-emerald-400 font-semibold">${(p.total_relevados || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4 font-mono font-bold ${p.pct_avance >= 80 ? 'text-emerald-400' : (p.pct_avance < 10 ? 'text-red-400' : 'text-amber-400')}">${p.pct_avance}%</td>
+              <td class="py-2.5 px-4 font-mono font-bold text-cyan-300">${(p.total_pendientes || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4 font-mono text-slate-300">${(p.pendientes_cc || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4 font-mono text-rose-400 font-semibold">${(p.pendientes_tarifa_social || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded text-[10px] ${diagBadge}">${p.diagnostico_operativo}</span></td>
+            </tr>
+          `;
+        }).join('');
+      }
 
       // 2. Matriz de Priorización SETs
       const tbodyPrio = document.getElementById('tbody-prio');
-      tbodyPrio.innerHTML = (data.subestaciones_top_pendientes || []).map(s => {
-        let prioBadge = 'bg-slate-800 text-slate-300';
-        if (s.prioridad_relevamiento_futuro === '1_RELEVAMIENTO_INMEDIATO') {
-          prioBadge = 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold';
-        } else if (s.prioridad_relevamiento_futuro === '2_SENSIBILIDAD_SOCIAL') {
-          prioBadge = 'bg-rose-500/20 text-rose-300 border border-rose-500/40 font-semibold';
-        } else if (s.prioridad_relevamiento_futuro === '3_SANEAMIENTO_TOPOLOGICO_PREVIO') {
-          prioBadge = 'bg-red-500/20 text-red-300 border border-red-500/40 font-bold';
-        } else if (s.prioridad_relevamiento_futuro === '4_AVANZADA_O_COMPLETADA') {
-          prioBadge = 'bg-blue-500/20 text-blue-300 border border-blue-500/40';
-        }
+      if (tbodyPrio && data.subestaciones_top_pendientes) {
+        tbodyPrio.innerHTML = data.subestaciones_top_pendientes.map(s => {
+          let prioBadge = 'bg-slate-800 text-slate-300';
+          if (s.prioridad_relevamiento_futuro === '1_RELEVAMIENTO_INMEDIATO') {
+            prioBadge = 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-semibold';
+          } else if (s.prioridad_relevamiento_futuro === '2_SENSIBILIDAD_SOCIAL') {
+            prioBadge = 'bg-rose-500/20 text-rose-300 border border-rose-500/40 font-semibold';
+          } else if (s.prioridad_relevamiento_futuro === '3_SANEAMIENTO_TOPOLOGICO_PREVIO') {
+            prioBadge = 'bg-red-500/20 text-red-300 border border-red-500/40 font-bold';
+          } else if (s.prioridad_relevamiento_futuro === '4_AVANZADA_O_COMPLETADA') {
+            prioBadge = 'bg-blue-500/20 text-blue-300 border border-blue-500/40';
+          }
 
-        let calBadge = 'text-slate-400';
-        if (s.calidad_poligono.includes('ALTA')) calBadge = 'text-emerald-400 font-medium';
-        else if (s.calidad_poligono.includes('BAJA')) calBadge = 'text-red-400 font-bold';
-        else calBadge = 'text-amber-400';
+          let calBadge = 'text-slate-400';
+          if (s.calidad_poligono && s.calidad_poligono.includes('ALTA')) calBadge = 'text-emerald-400 font-medium';
+          else if (s.calidad_poligono && s.calidad_poligono.includes('BAJA')) calBadge = 'text-red-400 font-bold';
+          else calBadge = 'text-amber-400';
 
-        return `
-          <tr class="hover:bg-slate-800/40 transition">
-            <td class="py-2.5 px-4 font-mono font-medium text-white">#${s.id} <span class="text-amber-400 font-semibold">[CT ${s.ctmtbt || 'S/D'}]</span></td>
-            <td class="py-2.5 px-4 text-slate-300">${s.localidad_principal || 'N/A'} <span class="text-slate-500">(${s.distrito_principal || ''})</span></td>
-            <td class="py-2.5 px-4 font-mono font-semibold text-white">${(s.cant_suministros || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4 font-mono text-emerald-400">${(s.suministros_relevados || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4 font-mono font-bold text-cyan-300">${(s.suministros_pendientes || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4 font-mono">${s.pct_avance_relevamiento}%</td>
-            <td class="py-2.5 px-4 ${calBadge}">${s.calidad_poligono}</td>
-            <td class="py-2.5 px-4 font-mono text-amber-300 font-semibold">${s.parcelas_cortadas}</td>
-            <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded text-[10px] ${prioBadge}">${s.prioridad_relevamiento_futuro}</span></td>
-          </tr>
-        `;
-      }).join('');
+          return `
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="py-2.5 px-4 font-mono font-medium text-white">#${s.id} <span class="text-amber-400 font-semibold">[CT ${s.ctmtbt || 'S/D'}]</span></td>
+              <td class="py-2.5 px-4 text-slate-300">${s.localidad_principal || 'N/A'} <span class="text-slate-500">(${s.distrito_principal || ''})</span></td>
+              <td class="py-2.5 px-4 font-mono font-semibold text-white">${(s.cant_suministros || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4 font-mono text-emerald-400">${(s.suministros_relevados || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4 font-mono font-bold text-cyan-300">${(s.suministros_pendientes || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4 font-mono">${s.pct_avance_relevamiento}%</td>
+              <td class="py-2.5 px-4 ${calBadge}">${s.calidad_poligono}</td>
+              <td class="py-2.5 px-4 font-mono text-amber-300 font-semibold">${s.parcelas_cortadas}</td>
+              <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded text-[10px] ${prioBadge}">${s.prioridad_relevamiento_futuro}</span></td>
+            </tr>
+          `;
+        }).join('');
+      }
 
       // 3. Subestaciones
       const tbodySets = document.getElementById('tbody-sets');
-      tbodySets.innerHTML = (data.top_subestaciones || []).map(s => {
-        const isSocial = s.pct_tarifa_social >= 20.0;
-        return `
-          <tr class="hover:bg-slate-800/40 transition">
-            <td class="py-2.5 px-4 font-mono font-medium text-white">#${s.id} <span class="text-amber-400 font-semibold">[CT ${s.ctmtbt || 'S/D'}]</span></td>
-            <td class="py-2.5 px-4 text-slate-300">${s.localidad_principal || 'N/A'} <span class="text-slate-500">(${s.distrito_principal || ''})</span></td>
-            <td class="py-2.5 px-4 font-mono">${(s.cant_parcelas || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4 font-mono font-semibold text-white">${(s.cant_suministros || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4 font-mono text-rose-400">${(s.cant_tarifa_social || 0).toLocaleString()}</td>
-            <td class="py-2.5 px-4">
-              <span class="px-2 py-0.5 rounded text-[11px] font-mono ${isSocial ? 'bg-rose-500/20 text-rose-300 border border-rose-500/30' : 'bg-slate-800 text-slate-400'}">
-                ${s.pct_tarifa_social}%
-              </span>
-            </td>
-            <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded text-[10px] bg-indigo-500/10 text-indigo-300 border border-indigo-500/30 font-medium">${s.categoria_set}</span></td>
-          </tr>
-        `;
-      }).join('');
+      if (tbodySets && data.top_subestaciones) {
+        tbodySets.innerHTML = data.top_subestaciones.map(s => {
+          const isSocial = s.pct_tarifa_social >= 20.0;
+          return `
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="py-2.5 px-4 font-mono font-medium text-white">#${s.id} <span class="text-amber-400 font-semibold">[CT ${s.ctmtbt || 'S/D'}]</span></td>
+              <td class="py-2.5 px-4 text-slate-300">${s.localidad_principal || 'N/A'} <span class="text-slate-500">(${s.distrito_principal || ''})</span></td>
+              <td class="py-2.5 px-4 font-mono">${(s.cant_parcelas || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4 font-mono font-semibold text-white">${(s.cant_suministros || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4 font-mono text-rose-400">${(s.cant_tarifa_social || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-4">
+                <span class="px-2 py-0.5 rounded text-[11px] font-mono ${isSocial ? 'bg-rose-500/20 text-rose-300 border border-rose-500/30' : 'bg-slate-800 text-slate-400'}">
+                  ${s.pct_tarifa_social}%
+                </span>
+              </td>
+              <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded text-[10px] bg-indigo-500/10 text-indigo-300 border border-indigo-500/30 font-medium">${s.categoria_set}</span></td>
+            </tr>
+          `;
+        }).join('');
+      }
 
       // 4. Parcelas Cortadas
       const tbodyCortadas = document.getElementById('tbody-cortadas');
-      tbodyCortadas.innerHTML = (data.muestra_parcelas_cortadas || []).map(p => `
-        <tr class="hover:bg-slate-800/40 transition">
-          <td class="py-2.5 px-4 font-mono text-amber-300 font-medium">${p.nomenclatura}</td>
-          <td class="py-2.5 px-4 font-mono text-slate-400">${p.nomenclatura_manzana || 'N/A'}</td>
-          <td class="py-2.5 px-4 font-mono font-bold text-white"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">CT ${p.set_ctmtbt_frontera || 'S/D'}</span></td>
-          <td class="py-2.5 px-4 text-slate-300">${p.distrito_descripcion || ''} <span class="text-slate-500">(${p.barrio || ''})</span></td>
-          <td class="py-2.5 px-4 font-mono font-semibold">${p.cant_suministros}</td>
-          <td class="py-2.5 px-4 font-mono text-rose-400">${p.cant_tarifa_social}</td>
-          <td class="py-2.5 px-4 font-mono text-slate-500 text-[10px]">${p.centroide_lat?.toFixed(5)}, ${p.centroide_lon?.toFixed(5)}</td>
-        </tr>
-      `).join('');
+      if (tbodyCortadas && data.muestra_parcelas_cortadas) {
+        tbodyCortadas.innerHTML = data.muestra_parcelas_cortadas.map(p => `
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="py-2.5 px-4 font-mono text-amber-300 font-medium">${p.nomenclatura}</td>
+            <td class="py-2.5 px-4 font-mono text-slate-400">${p.nomenclatura_manzana || 'N/A'}</td>
+            <td class="py-2.5 px-4 font-mono font-bold text-white"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">CT ${p.set_ctmtbt_frontera || 'S/D'}</span></td>
+            <td class="py-2.5 px-4 text-slate-300">${p.distrito_descripcion || ''} <span class="text-slate-500">(${p.barrio || ''})</span></td>
+            <td class="py-2.5 px-4 font-mono font-semibold">${p.cant_suministros}</td>
+            <td class="py-2.5 px-4 font-mono text-rose-400">${p.cant_tarifa_social}</td>
+            <td class="py-2.5 px-4 font-mono text-slate-500 text-[10px]">${p.centroide_lat?.toFixed(5)}, ${p.centroide_lon?.toFixed(5)}</td>
+          </tr>
+        `).join('');
+      }
 
       // 5. Parcelas Duplicadas
       const tbodyDups = document.getElementById('tbody-dups');
-      tbodyDups.innerHTML = (data.muestra_parcelas_duplicadas || []).map(d => `
-        <tr class="hover:bg-slate-800/40 transition">
-          <td class="py-2.5 px-4 font-mono text-blue-300 font-medium">${d.nomenclatura}</td>
-          <td class="py-2.5 px-4 font-mono text-slate-300">${d.nomenclatura_manzana}</td>
-          <td class="py-2.5 px-4 font-mono font-bold text-amber-400">${d.nro_parcela}</td>
-          <td class="py-2.5 px-4 text-slate-400">${d.distrito_descripcion || ''}</td>
-          <td class="py-2.5 px-4 font-mono text-slate-200">${d.cant_suministros}</td>
-        </tr>
-      `).join('');
+      if (tbodyDups && data.muestra_parcelas_duplicadas) {
+        tbodyDups.innerHTML = data.muestra_parcelas_duplicadas.map(d => `
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="py-2.5 px-4 font-mono text-blue-300 font-medium">${d.nomenclatura}</td>
+            <td class="py-2.5 px-4 font-mono text-slate-300">${d.nomenclatura_manzana}</td>
+            <td class="py-2.5 px-4 font-mono font-bold text-amber-400">${d.nro_parcela}</td>
+            <td class="py-2.5 px-4 text-slate-400">${d.distrito_descripcion || ''}</td>
+            <td class="py-2.5 px-4 font-mono text-slate-200">${d.cant_suministros}</td>
+          </tr>
+        `).join('');
+      }
     }
 
     // Logica de Filtro por Diagnostico Operativo (Planes)
-    let selectedDiagnostico = 'TODOS';
-
     function setDiagnosticoFilter(diag) {
       selectedDiagnostico = diag;
       const sel = document.getElementById('selectDiagnostico');
@@ -650,7 +688,8 @@
     }
 
     function filterPlanesTable() {
-      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const searchEl = document.getElementById('searchInput');
+      const q = searchEl ? searchEl.value.toLowerCase().trim() : '';
       const tbody = document.getElementById('tbody-planes');
       if (!tbody) return;
       const rows = tbody.getElementsByTagName('tr');
@@ -715,7 +754,8 @@
         filterPlanesTable();
         return;
       }
-      const q = document.getElementById('searchInput').value.toLowerCase().trim();
+      const searchEl = document.getElementById('searchInput');
+      const q = searchEl ? searchEl.value.toLowerCase().trim() : '';
       const tbody = document.getElementById(`tbody-${activeTab}`);
       if (!tbody) return;
       const rows = tbody.getElementsByTagName('tr');
@@ -725,11 +765,23 @@
       }
     }
 
+    function initDashboard() {
+      try {
+        initKPIs();
+        renderCharts();
+        renderTables();
+        filterPlanesTable();
+      } catch (err) {
+        console.error('Error al inicializar el dashboard:', err);
+      }
+    }
+
     // Initialize
-    window.addEventListener('DOMContentLoaded', () => {
-      renderCharts();
-      renderTables();
-    });
+    if (document.readyState === 'loading') {
+      window.addEventListener('DOMContentLoaded', initDashboard);
+    } else {
+      initDashboard();
+    }
   </script>
 </body>
 
