@@ -38,6 +38,7 @@ p_cortadas = os.path.join(reports_dir, 'log_excepciones_parcelas_cortadas_fronte
 p_dups = os.path.join(reports_dir, 'anomalias_parcelas_duplicadas_en_manzana.csv')
 p_rel = os.path.join(data_dir, 'georef_relevamiento_suministros.parquet')
 p_sumis = r'D:\Proyectos\antigravity-agents-repository\data\suministros_provincial_completo.parquet'
+p_padron = r'D:\Proyectos\antigravity-agents-repository\data\summary\padron_nuevas_rutas_provincial_consolidado.parquet'
 
 print("=" * 80)
 print("AUDITORÍA DE CALIDAD DE POLÍGONOS & PLAN DE RELEVAMIENTO A FUTURO EPEC")
@@ -249,9 +250,81 @@ ORDER BY plan
 """
 
 df_planes = con.execute(q_planes).df()
+
+# --------------------------------------------------------------------------------------
+# 6.B ANÁLISIS PARCELARIO POR PLAN: PARCELAS DIBUJADAS, FRONTERAS Y PARCELAS A DIBUJAR
+# --------------------------------------------------------------------------------------
+print("6.B Computando métricas parcelarias por plan (dibujadas, fronteras a analizar y faltantes a dibujar)...")
+con.register('df_cortadas_mem', df_cortadas)
+
+q_parc_plan = f"""
+WITH sumis_base AS (
+    SELECT 
+        suministro,
+        CASE 
+            WHEN TRY_CAST(grupo_lectura AS INTEGER) BETWEEN 1 AND 20 THEN 'Plan ' || LPAD(grupo_lectura, 2, '0')
+            ELSE 'Otros'
+        END as plan,
+        parcela_asignada,
+        CASE 
+            WHEN (parcela_asignada IS NULL OR parcela_asignada = '') AND id_suministro_catastral IS NOT NULL AND id_suministro_catastral != ''
+            THEN regexp_replace(id_suministro_catastral, '^[0-9]+-[0-9]+-', '')
+            ELSE NULL
+        END as nomenc_a_dibujar
+    FROM '{p_padron}'
+    WHERE distrito = 1
+),
+parc_stats AS (
+    SELECT 
+        plan,
+        count(distinct CASE WHEN parcela_asignada IS NOT NULL AND parcela_asignada != '' THEN parcela_asignada END) as total_parcelas,
+        count(distinct nomenc_a_dibujar) as parcelas_a_dibujar
+    FROM sumis_base
+    WHERE plan LIKE 'Plan %'
+    GROUP BY plan
+),
+parc_plan_map AS (
+    SELECT 
+        parcela_asignada,
+        plan,
+        ROW_NUMBER() OVER (PARTITION BY parcela_asignada ORDER BY count(*) DESC) as rn
+    FROM sumis_base
+    WHERE plan LIKE 'Plan %' AND parcela_asignada IS NOT NULL AND parcela_asignada != ''
+    GROUP BY parcela_asignada, plan
+),
+cortadas_stats AS (
+    SELECT 
+        m.plan,
+        count(distinct c.nomenclatura) as parcelas_frontera
+    FROM df_cortadas_mem c
+    JOIN parc_plan_map m ON c.nomenclatura = m.parcela_asignada AND m.rn = 1
+    GROUP BY m.plan
+)
+SELECT 
+    p.plan,
+    p.total_parcelas,
+    COALESCE(c.parcelas_frontera, 0) as parcelas_frontera,
+    p.parcelas_a_dibujar,
+    round(COALESCE(c.parcelas_frontera, 0) * 100.0 / NULLIF(p.total_parcelas, 0), 2) as pct_frontera,
+    round(p.parcelas_a_dibujar * 100.0 / NULLIF(p.total_parcelas, 0), 2) as pct_a_dibujar
+FROM parc_stats p
+LEFT JOIN cortadas_stats c ON p.plan = c.plan
+ORDER BY p.plan
+"""
+
+df_parc_metrics = con.execute(q_parc_plan).df()
+
+# Merge métricas parcelarias con df_planes
+df_planes = df_planes.merge(df_parc_metrics, on='plan', how='left')
+df_planes['total_parcelas'] = df_planes['total_parcelas'].fillna(0).astype(int)
+df_planes['parcelas_frontera'] = df_planes['parcelas_frontera'].fillna(0).astype(int)
+df_planes['parcelas_a_dibujar'] = df_planes['parcelas_a_dibujar'].fillna(0).astype(int)
+df_planes['pct_frontera'] = df_planes['pct_frontera'].fillna(0.0)
+df_planes['pct_a_dibujar'] = df_planes['pct_a_dibujar'].fillna(0.0)
+
 csv_planes_path = os.path.join(reports_dir, 'resumen_plan_avance_y_calidad.csv')
 df_planes.to_csv(csv_planes_path, index=False)
-print(f"   -> Resumen de planes guardado en: {csv_planes_path}")
+print(f"   -> Resumen consolidado de planes con métricas parcelarias guardado en: {csv_planes_path}")
 
 # --------------------------------------------------------------------------------------
 # 7. GENERACIÓN DEL PAYLOAD CONSOLIDADO PARA EL DASHBOARD WEB INTERACTIVO
@@ -300,7 +373,10 @@ dashboard_payload = {
         "total_20_planes": int(df_planes['total_puntos'].sum()),
         "relevados_20_planes": int(df_planes['total_relevados'].sum()),
         "pendientes_20_planes": int(df_planes['total_pendientes'].sum()),
-        "pct_avance_20_planes": round(df_planes['total_relevados'].sum() * 100.0 / df_planes['total_puntos'].sum(), 2)
+        "pct_avance_20_planes": round(df_planes['total_relevados'].sum() * 100.0 / df_planes['total_puntos'].sum(), 2),
+        "total_parcelas_20_planes": int(df_planes['total_parcelas'].sum()),
+        "parcelas_frontera_20_planes": int(df_planes['parcelas_frontera'].sum()),
+        "parcelas_a_dibujar_20_planes": int(df_planes['parcelas_a_dibujar'].sum())
     },
     "distribucion_categorias": cat_counts,
     "top_subestaciones": top_sets,

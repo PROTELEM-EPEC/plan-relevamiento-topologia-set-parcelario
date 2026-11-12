@@ -19,7 +19,10 @@ window.DASHBOARD_DATA = {
     "total_20_planes": 585819,
     "relevados_20_planes": 348673,
     "pendientes_20_planes": 237146,
-    "pct_avance_20_planes": 59.52
+    "pct_avance_20_planes": 59.52,
+    "total_parcelas_20_planes": 266755,
+    "parcelas_frontera_20_planes": 88205,
+    "parcelas_a_dibujar_20_planes": 26736
   },
   "distribucion_categorias": {
     "PEQUEÑA (1-149 sumis)": 3164,
@@ -6940,7 +6943,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 2845.0,
       "pendientes_tarifa_social": 7.0,
       "pendientes_otros": 5.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 17931,
+      "parcelas_frontera": 5325,
+      "parcelas_a_dibujar": 1040,
+      "pct_frontera": 29.7,
+      "pct_a_dibujar": 5.8
     },
     {
       "plan": "Plan 02",
@@ -6951,7 +6959,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 1268.0,
       "pendientes_tarifa_social": 4.0,
       "pendientes_otros": 2.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 9773,
+      "parcelas_frontera": 3936,
+      "parcelas_a_dibujar": 452,
+      "pct_frontera": 40.27,
+      "pct_a_dibujar": 4.62
     },
     {
       "plan": "Plan 03",
@@ -6962,7 +6975,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 4191.0,
       "pendientes_tarifa_social": 416.0,
       "pendientes_otros": 16.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 24245,
+      "parcelas_frontera": 7346,
+      "parcelas_a_dibujar": 1531,
+      "pct_frontera": 30.3,
+      "pct_a_dibujar": 6.31
     },
     {
       "plan": "Plan 04",
@@ -6973,7 +6991,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 1589.0,
       "pendientes_tarifa_social": 5.0,
       "pendientes_otros": 1.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 8348,
+      "parcelas_frontera": 4000,
+      "parcelas_a_dibujar": 477,
+      "pct_frontera": 47.92,
+      "pct_a_dibujar": 5.71
     },
     {
       "plan": "Plan 05",
@@ -6984,7 +7007,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 3820.0,
       "pendientes_tarifa_social": 1589.0,
       "pendientes_otros": 29.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 16371,
+      "parcelas_frontera": 4711,
+      "parcelas_a_dibujar": 3017,
+      "pct_frontera": 28.78,
+      "pct_a_dibujar": 18.43
     },
     {
       "plan": "Plan 06",
@@ -6995,7 +7023,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 866.0,
       "pendientes_tarifa_social": 56.0,
       "pendientes_otros": 5.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 8808,
+      "parcelas_frontera": 3224,
+      "parcelas_a_dibujar": 349,
+      "pct_frontera": 36.6,
+      "pct_a_dibujar": 3.96
     },
     {
       "plan": "Plan 07",
@@ -7006,7 +7039,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 20982.0,
       "pendientes_tarifa_social": 3285.0,
       "pendientes_otros": 81.0,
-      "diagnostico_operativo": "RELEVAMIENTO_MIXTO_ESTANDAR"
+      "diagnostico_operativo": "RELEVAMIENTO_MIXTO_ESTANDAR",
+      "total_parcelas": 12101,
+      "parcelas_frontera": 4585,
+      "parcelas_a_dibujar": 2555,
+      "pct_frontera": 37.89,
+      "pct_a_dibujar": 21.11
     },
     {
       "plan": "Plan 08",
@@ -7017,7 +7055,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 27061.0,
       "pendientes_tarifa_social": 404.0,
       "pendientes_otros": 70.0,
-      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO"
+      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO",
+      "total_parcelas": 6189,
+      "parcelas_frontera": 3403,
+      "parcelas_a_dibujar": 1279,
+      "pct_frontera": 54.98,
+      "pct_a_dibujar": 20.67
     },
     {
       "plan": "Plan 09",
@@ -7028,7 +7071,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 13466.0,
       "pendientes_tarifa_social": 2507.0,
       "pendientes_otros": 74.0,
-      "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA"
+      "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA",
+      "total_parcelas": 8186,
+      "parcelas_frontera": 3171,
+      "parcelas_a_dibujar": 2872,
+      "pct_frontera": 38.74,
+      "pct_a_dibujar": 35.08
     },
     {
       "plan": "Plan 10",
@@ -7039,7 +7087,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 2966.0,
       "pendientes_tarifa_social": 1515.0,
       "pendientes_otros": 22.0,
-      "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA"
+      "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA",
+      "total_parcelas": 12121,
+      "parcelas_frontera": 4176,
+      "parcelas_a_dibujar": 691,
+      "pct_frontera": 34.45,
+      "pct_a_dibujar": 5.7
     },
     {
       "plan": "Plan 11",
@@ -7050,7 +7103,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 18336.0,
       "pendientes_tarifa_social": 5335.0,
       "pendientes_otros": 122.0,
-      "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA"
+      "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA",
+      "total_parcelas": 11172,
+      "parcelas_frontera": 4332,
+      "parcelas_a_dibujar": 2719,
+      "pct_frontera": 38.78,
+      "pct_a_dibujar": 24.34
     },
     {
       "plan": "Plan 12",
@@ -7061,7 +7119,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 10323.0,
       "pendientes_tarifa_social": 114.0,
       "pendientes_otros": 15.0,
-      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO"
+      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO",
+      "total_parcelas": 8949,
+      "parcelas_frontera": 2944,
+      "parcelas_a_dibujar": 581,
+      "pct_frontera": 32.9,
+      "pct_a_dibujar": 6.49
     },
     {
       "plan": "Plan 13",
@@ -7072,7 +7135,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 2705.0,
       "pendientes_tarifa_social": 54.0,
       "pendientes_otros": 9.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 18399,
+      "parcelas_frontera": 5195,
+      "parcelas_a_dibujar": 1153,
+      "pct_frontera": 28.24,
+      "pct_a_dibujar": 6.27
     },
     {
       "plan": "Plan 14",
@@ -7083,7 +7151,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 47764.0,
       "pendientes_tarifa_social": 26.0,
       "pendientes_otros": 89.0,
-      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO"
+      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO",
+      "total_parcelas": 2122,
+      "parcelas_frontera": 23,
+      "parcelas_a_dibujar": 1047,
+      "pct_frontera": 1.08,
+      "pct_a_dibujar": 49.34
     },
     {
       "plan": "Plan 15",
@@ -7094,7 +7167,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 29751.0,
       "pendientes_tarifa_social": 68.0,
       "pendientes_otros": 176.0,
-      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO"
+      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO",
+      "total_parcelas": 2927,
+      "parcelas_frontera": 102,
+      "parcelas_a_dibujar": 1030,
+      "pct_frontera": 3.48,
+      "pct_a_dibujar": 35.19
     },
     {
       "plan": "Plan 16",
@@ -7105,7 +7183,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 4619.0,
       "pendientes_tarifa_social": 55.0,
       "pendientes_otros": 9.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 33638,
+      "parcelas_frontera": 10042,
+      "parcelas_a_dibujar": 2834,
+      "pct_frontera": 29.85,
+      "pct_a_dibujar": 8.42
     },
     {
       "plan": "Plan 17",
@@ -7116,7 +7199,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 19391.0,
       "pendientes_tarifa_social": 53.0,
       "pendientes_otros": 52.0,
-      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO"
+      "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO",
+      "total_parcelas": 9429,
+      "parcelas_frontera": 3211,
+      "parcelas_a_dibujar": 800,
+      "pct_frontera": 34.05,
+      "pct_a_dibujar": 8.48
     },
     {
       "plan": "Plan 18",
@@ -7127,7 +7215,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 2083.0,
       "pendientes_tarifa_social": 412.0,
       "pendientes_otros": 12.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 24759,
+      "parcelas_frontera": 7623,
+      "parcelas_a_dibujar": 533,
+      "pct_frontera": 30.79,
+      "pct_a_dibujar": 2.15
     },
     {
       "plan": "Plan 19",
@@ -7138,7 +7231,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 2787.0,
       "pendientes_tarifa_social": 14.0,
       "pendientes_otros": 7.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 10016,
+      "parcelas_frontera": 4076,
+      "parcelas_a_dibujar": 529,
+      "pct_frontera": 40.69,
+      "pct_a_dibujar": 5.28
     },
     {
       "plan": "Plan 20",
@@ -7149,7 +7247,12 @@ window.DASHBOARD_DATA = {
       "pendientes_cc": 3582.0,
       "pendientes_tarifa_social": 28.0,
       "pendientes_otros": 8.0,
-      "diagnostico_operativo": "FASE_FINAL_REMANENTES"
+      "diagnostico_operativo": "FASE_FINAL_REMANENTES",
+      "total_parcelas": 21271,
+      "parcelas_frontera": 6780,
+      "parcelas_a_dibujar": 1247,
+      "pct_frontera": 31.87,
+      "pct_a_dibujar": 5.86
     }
   ],
   "subestaciones_top_pendientes": [

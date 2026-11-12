@@ -318,21 +318,28 @@
                 class="ml-1 opacity-75">(11)</span>
             </button>
           </div>
-          <div class="text-slate-400 text-[11px]">
-            Mostrando <span id="count-planes-visibles" class="font-bold text-emerald-400">20</span> de 20 planes
+          <div class="text-slate-400 text-[11px] flex items-center gap-3">
+            <span><i class="fa-solid fa-draw-polygon text-indigo-400 mr-1"></i>266.8k Parcelas</span>
+            <span><i class="fa-solid fa-scissors text-amber-400 mr-1"></i>88.2k Frontera SET</span>
+            <span><i class="fa-solid fa-pen-ruler text-cyan-400 mr-1"></i>26.7k a Dibujar</span>
+            <span class="text-slate-600">|</span>
+            <span>Mostrando <span id="count-planes-visibles" class="font-bold text-emerald-400">20</span> de 20 planes</span>
           </div>
         </div>
         <table class="w-full text-left text-xs border-collapse">
           <thead class="bg-slate-950/90 text-slate-400 sticky top-0 z-10 border-b border-slate-800">
             <tr>
-              <th class="py-3 px-4 font-semibold">Plan de Lectura</th>
-              <th class="py-3 px-4 font-semibold">Total Puntos</th>
-              <th class="py-3 px-4 font-semibold">Relevados Históricos</th>
-              <th class="py-3 px-4 font-semibold">% Avance</th>
-              <th class="py-3 px-4 font-semibold">Pendientes Totales</th>
-              <th class="py-3 px-4 font-semibold">Pendientes CC</th>
-              <th class="py-3 px-4 font-semibold">Pendientes Tarifa Social</th>
-              <th class="py-3 px-4 font-semibold">Diagnóstico Operativo</th>
+              <th class="py-3 px-3 font-semibold">Plan</th>
+              <th class="py-3 px-3 font-semibold">Total Puntos</th>
+              <th class="py-3 px-3 font-semibold">Relevados</th>
+              <th class="py-3 px-3 font-semibold">% Avance</th>
+              <th class="py-3 px-3 font-semibold">Pendientes</th>
+              <th class="py-3 px-3 font-semibold">Pendientes CC</th>
+              <th class="py-3 px-3 font-semibold">Tarifa Social</th>
+              <th class="py-3 px-3 font-semibold text-indigo-300">Total Parcelas</th>
+              <th class="py-3 px-3 font-semibold text-amber-300">Frontera SET (Analizar)</th>
+              <th class="py-3 px-3 font-semibold text-cyan-300">A Dibujar (Faltantes)</th>
+              <th class="py-3 px-3 font-semibold">Diagnóstico Operativo</th>
             </tr>
           </thead>
           <tbody id="tbody-planes" class="divide-y divide-slate-800 text-slate-300">
@@ -557,14 +564,23 @@
           }
           return `
             <tr class="hover:bg-slate-800/40 transition" data-diagnostico="${p.diagnostico_operativo}">
-              <td class="py-2.5 px-4 font-mono font-bold text-white">${p.plan}</td>
-              <td class="py-2.5 px-4 font-mono">${(p.total_puntos || 0).toLocaleString()}</td>
-              <td class="py-2.5 px-4 font-mono text-emerald-400 font-semibold">${(p.total_relevados || 0).toLocaleString()}</td>
-              <td class="py-2.5 px-4 font-mono font-bold ${p.pct_avance >= 80 ? 'text-emerald-400' : (p.pct_avance < 10 ? 'text-red-400' : 'text-amber-400')}">${p.pct_avance}%</td>
-              <td class="py-2.5 px-4 font-mono font-bold text-cyan-300">${(p.total_pendientes || 0).toLocaleString()}</td>
-              <td class="py-2.5 px-4 font-mono text-slate-300">${(p.pendientes_cc || 0).toLocaleString()}</td>
-              <td class="py-2.5 px-4 font-mono text-rose-400 font-semibold">${(p.pendientes_tarifa_social || 0).toLocaleString()}</td>
-              <td class="py-2.5 px-4"><span class="px-2 py-0.5 rounded text-[10px] ${diagBadge}">${p.diagnostico_operativo}</span></td>
+              <td class="py-2.5 px-3 font-mono font-bold text-white">${p.plan}</td>
+              <td class="py-2.5 px-3 font-mono">${(p.total_puntos || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-3 font-mono text-emerald-400 font-semibold">${(p.total_relevados || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-3 font-mono font-bold ${p.pct_avance >= 80 ? 'text-emerald-400' : (p.pct_avance < 10 ? 'text-red-400' : 'text-amber-400')}">${p.pct_avance}%</td>
+              <td class="py-2.5 px-3 font-mono font-bold text-cyan-300">${(p.total_pendientes || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-3 font-mono text-slate-300">${(p.pendientes_cc || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-3 font-mono text-rose-400 font-semibold">${(p.pendientes_tarifa_social || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-3 font-mono text-indigo-300 font-semibold">${(p.total_parcelas || 0).toLocaleString()}</td>
+              <td class="py-2.5 px-3 font-mono text-amber-300 font-semibold">
+                ${(p.parcelas_frontera || 0).toLocaleString()}
+                <span class="text-[10px] text-amber-400/80 font-normal ml-0.5">(${p.pct_frontera || 0}%)</span>
+              </td>
+              <td class="py-2.5 px-3 font-mono text-cyan-300 font-semibold">
+                ${(p.parcelas_a_dibujar || 0).toLocaleString()}
+                <span class="text-[10px] text-cyan-400/80 font-normal ml-0.5">(${p.pct_a_dibujar || 0}%)</span>
+              </td>
+              <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-[10px] ${diagBadge}">${p.diagnostico_operativo}</span></td>
             </tr>
           `;
         }).join('');
@@ -654,7 +670,7 @@
             <td class="py-2.5 px-4 font-mono text-slate-300">${d.nomenclatura_manzana}</td>
             <td class="py-2.5 px-4 font-mono font-bold text-amber-400">${d.nro_parcela}</td>
             <td class="py-2.5 px-4 text-slate-400">${d.distrito_descripcion || ''}</td>
-            <td class="py-2.5 px-4 font-mono text-slate-200">${d.cant_suministros}</td>
+            <td class="-2.font-mono text-slate-200">${d.cant_suministros}</td>
           </tr>
         `).join('');
       }
