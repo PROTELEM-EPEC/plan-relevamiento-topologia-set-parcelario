@@ -90,3 +90,4 @@ Corresponden a parcelas donde existen suministros legalmente constituidos y acti
    - Ajustar el perímetro de las subestaciones en los Planes 07, 08 y 11 para que sigan las líneas divisorias de parcelas (ejes de calle o fondos de lote), reduciendo drásticamente las 88.205 parcelas cortadas antes de que las cuadrillas inicien el barrido en dichos distritos.
 3. **Prioridad 3 - Cierre de Remanentes**:
    - En los 12 planes con más del 80% de avance, utilizar el mapa del visor para asignar rutas directas a las parcelas específicas con suministros pendientes.
+

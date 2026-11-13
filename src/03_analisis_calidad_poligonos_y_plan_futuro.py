@@ -327,6 +327,142 @@ df_planes.to_csv(csv_planes_path, index=False)
 print(f"   -> Resumen consolidado de planes con métricas parcelarias guardado en: {csv_planes_path}")
 
 # --------------------------------------------------------------------------------------
+# 6.C PROYECCIÓN MENSUAL DE DESPLIEGUE (10.000 CASOS/MES, NOVIEMBRE 2026 A FIN DE CAMPAÑA)
+# --------------------------------------------------------------------------------------
+print("\n6.C Generando proyección mensual de despliegue a 10.000 casos/mes...")
+
+q_nov = f"""
+SELECT 
+    CASE 
+        WHEN TRY_CAST(p.grupo_lectura AS INTEGER) BETWEEN 1 AND 20 THEN 'Plan ' || LPAD(p.grupo_lectura, 2, '0')
+        ELSE 'Otros'
+    END as plan,
+    count(*) as total_relevados_nov
+FROM '{p_rel}' r
+JOIN '{p_padron}' p ON r.suministro = p.suministro
+WHERE r.rel_fecha_alta >= '2026-11-01' AND r.rel_fecha_alta < '2026-12-01'
+GROUP BY 1
+ORDER BY 1
+"""
+nov_relevados = con.execute(q_nov).df().set_index('plan')['total_relevados_nov'].to_dict()
+
+# Colores armónicos y contrastantes para cada plan en la gráfica apilada
+colores_dict = {
+    "Plan 05": "#10b981", # Emerald
+    "Plan 08": "#6366f1", # Indigo
+    "Plan 12": "#3b82f6", # Blue
+    "Plan 17": "#06b6d4", # Cyan
+    "Plan 07": "#f59e0b", # Amber
+    "Plan 09": "#ec4899", # Pink
+    "Plan 10": "#8b5cf6", # Purple
+    "Plan 11": "#f43f5e", # Rose
+    "Plan 14": "#14b8a6", # Teal
+    "Plan 15": "#eab308", # Yellow
+    "Remanentes (10 Planes)": "#64748b" # Slate
+}
+
+planes_prioritarios_tabla = [
+    {"orden": 0, "plan": "Plan 05", "suministros": 27593, "parcelas_analizar": 4711, "total_parcelas": 16371, "pendientes": 5438, "relevados_nov": nov_relevados.get("Plan 05", 684), "estado_cronograma": "Completando en Noviembre 2026", "color": "#10b981"},
+    {"orden": 1, "plan": "Plan 08", "suministros": 27622, "parcelas_analizar": 4682, "total_parcelas": 10871, "pendientes": 27535, "relevados_nov": 0, "estado_cronograma": "Arranque Diciembre 2026", "color": "#6366f1"},
+    {"orden": 2, "plan": "Plan 12", "suministros": 22098, "parcelas_analizar": 3525, "total_parcelas": 12474, "pendientes": 10452, "relevados_nov": 0, "estado_cronograma": "Febrero a Marzo 2027", "color": "#3b82f6"},
+    {"orden": 3, "plan": "Plan 17", "suministros": 34787, "parcelas_analizar": 4011, "total_parcelas": 13440, "pendientes": 19496, "relevados_nov": 1, "estado_cronograma": "Marzo a Mayo 2027", "color": "#06b6d4"},
+    {"orden": 4, "plan": "Plan 07", "suministros": 25216, "parcelas_analizar": 7140, "total_parcelas": 19241, "pendientes": 24348, "relevados_nov": nov_relevados.get("Plan 07", 126), "estado_cronograma": "Mayo a Agosto 2027", "color": "#f59e0b"},
+    {"orden": 5, "plan": "Plan 09", "suministros": 16863, "parcelas_analizar": 6043, "total_parcelas": 14229, "pendientes": 16047, "relevados_nov": 0, "estado_cronograma": "Agosto a Septiembre 2027", "color": "#ec4899"},
+    {"orden": 6, "plan": "Plan 10", "suministros": 17360, "parcelas_analizar": 4867, "total_parcelas": 16988, "pendientes": 4503, "relevados_nov": 0, "estado_cronograma": "Septiembre a Octubre 2027", "color": "#8b5cf6"},
+    {"orden": 7, "plan": "Plan 11", "suministros": 24233, "parcelas_analizar": 7051, "total_parcelas": 18223, "pendientes": 23793, "relevados_nov": 0, "estado_cronograma": "Octubre a Diciembre 2027", "color": "#f43f5e"},
+    {"orden": 8, "plan": "Plan 14", "suministros": 47912, "parcelas_analizar": 1070, "total_parcelas": 3192,  "pendientes": 47879, "relevados_nov": 0, "estado_cronograma": "Diciembre 2027 a Mayo 2028", "color": "#14b8a6"},
+    {"orden": 9, "plan": "Plan 15", "suministros": 30593, "parcelas_analizar": 1132, "total_parcelas": 4059,  "pendientes": 29995, "relevados_nov": 0, "estado_cronograma": "Mayo a Agosto 2028", "color": "#eab308"}
+]
+
+remanentes_pendientes_total = 27660
+meses_nombres = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
+
+def generar_cronograma_sim(modo="pendientes", incluir_remanentes=False):
+    crono = []
+    
+    # 1. Noviembre 2026: Plan 05 (relevados nov + remanente para completar) + Plan 07 hechos en nov
+    p05_nov = nov_relevados.get("Plan 05", 684) + 5438
+    p07_nov = nov_relevados.get("Plan 07", 126)
+    
+    asig_nov = {"Plan 05": p05_nov}
+    if p07_nov > 0:
+        asig_nov["Plan 07"] = p07_nov
+        
+    crono.append({
+        "mes": "Nov-2026",
+        "anio": 2026,
+        "mes_num": 11,
+        "asignaciones": asig_nov,
+        "total": sum(asig_nov.values()),
+        "meta_mensual": 10000,
+        "estado": "EJECUCION_ACTUAL"
+    })
+    
+    # 2. Cola de planes
+    cola = []
+    for p in planes_prioritarios_tabla[1:]:
+        val = p["pendientes"] if modo == "pendientes" else p["suministros"]
+        cola.append({"plan": p["plan"], "remaining": val, "color": p["color"]})
+        
+    if incluir_remanentes:
+        cola.append({"plan": "Remanentes (10 Planes)", "remaining": remanentes_pendientes_total, "color": "#64748b"})
+        
+    cur_year = 2026
+    cur_month = 12
+    cap_mensual = 10000
+    
+    while any(c["remaining"] > 0 for c in cola):
+        mes_str = f"{meses_nombres[cur_month-1]}-{cur_year}"
+        cap_rest = cap_mensual
+        asig_mes = {}
+        
+        for c in cola:
+            if c["remaining"] <= 0:
+                continue
+            if cap_rest <= 0:
+                break
+            take = min(cap_rest, c["remaining"])
+            asig_mes[c["plan"]] = int(take)
+            c["remaining"] -= take
+            cap_rest -= take
+            
+        crono.append({
+            "mes": mes_str,
+            "anio": cur_year,
+            "mes_num": cur_month,
+            "asignaciones": asig_mes,
+            "total": sum(asig_mes.values()),
+            "meta_mensual": cap_mensual,
+            "estado": "PROYECTADO"
+        })
+        
+        cur_month += 1
+        if cur_month > 12:
+            cur_month = 1
+            cur_year += 1
+            
+    return crono
+
+crono_pendientes_9 = generar_cronograma_sim("pendientes", False)
+crono_pendientes_full = generar_cronograma_sim("pendientes", True)
+crono_sumis_9 = generar_cronograma_sim("suministros", False)
+
+# Exportar CSV de prioridad y cronograma
+df_prio_out = pd.DataFrame(planes_prioritarios_tabla)
+csv_prio_tabla = os.path.join(reports_dir, 'tabla_prioridad_relevamiento_9_planes.csv')
+df_prio_out.to_csv(csv_prio_tabla, index=False)
+
+rows_crono = []
+for m in crono_pendientes_9:
+    r = {"mes": m["mes"], "total_mes": m["total"]}
+    r.update(m["asignaciones"])
+    rows_crono.append(r)
+df_crono_out = pd.DataFrame(rows_crono).fillna(0)
+csv_crono_path = os.path.join(reports_dir, 'cronograma_despliegue_mensual_10k.csv')
+df_crono_out.to_csv(csv_crono_path, index=False)
+print(f"   -> Cronogramas y tablas guardados en: {csv_crono_path}")
+
+# --------------------------------------------------------------------------------------
 # 7. GENERACIÓN DEL PAYLOAD CONSOLIDADO PARA EL DASHBOARD WEB INTERACTIVO
 # --------------------------------------------------------------------------------------
 print("\n7. Actualizando datos interactivos del Dashboard Web (viewer/data/dashboard_data.js)...")
@@ -386,6 +522,25 @@ dashboard_payload = {
     "calidad_poligonos": res_calidad.to_dict(orient="records"),
     "matriz_priorizacion": res_prio.to_dict(orient="records"),
     "planes_relevamiento": df_planes.to_dict(orient="records"),
+    "cronograma_despliegue": {
+        "planes_prioritarios_tabla": planes_prioritarios_tabla,
+        "colores_planes": colores_dict,
+        "crono_pendientes_9": crono_pendientes_9,
+        "crono_pendientes_full": crono_pendientes_full,
+        "crono_sumis_9": crono_sumis_9,
+        "resumen_ejecutivo": {
+            "ritmo_mensual": 10000,
+            "mes_inicio": "Nov-2026",
+            "noviembre_plan_05": planes_prioritarios_tabla[0]["relevados_nov"] + planes_prioritarios_tabla[0]["pendientes"],
+            "diciembre_arranque": "Plan 08",
+            "meses_9_planes": len(crono_pendientes_9),
+            "mes_fin_9_planes": crono_pendientes_9[-1]["mes"],
+            "total_casos_9_planes": sum(m["total"] for m in crono_pendientes_9),
+            "meses_20_planes": len(crono_pendientes_full),
+            "mes_fin_20_planes": crono_pendientes_full[-1]["mes"],
+            "total_casos_20_planes": sum(m["total"] for m in crono_pendientes_full)
+        }
+    },
     "subestaciones_top_pendientes": df_set_full.sort_values(by='suministros_pendientes', ascending=False).head(100)[[
         'id', 'ctmtbt', 'agf_codigo', 'distrito_principal', 'localidad_principal',
         'cant_suministros', 'suministros_relevados', 'suministros_pendientes', 'pct_avance_relevamiento',

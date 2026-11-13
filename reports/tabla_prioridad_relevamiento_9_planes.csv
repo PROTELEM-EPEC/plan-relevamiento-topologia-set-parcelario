@@ -1,0 +1,11 @@
+orden,plan,suministros,parcelas_analizar,total_parcelas,pendientes,relevados_nov,estado_cronograma,color
+0,Plan 05,27593,4711,16371,5438,684,Completando en Noviembre 2026,#10b981
+1,Plan 08,27622,4682,10871,27535,0,Arranque Diciembre 2026,#6366f1
+2,Plan 12,22098,3525,12474,10452,0,Febrero a Marzo 2027,#3b82f6
+3,Plan 17,34787,4011,13440,19496,1,Marzo a Mayo 2027,#06b6d4
+4,Plan 07,25216,7140,19241,24348,126,Mayo a Agosto 2027,#f59e0b
+5,Plan 09,16863,6043,14229,16047,0,Agosto a Septiembre 2027,#ec4899
+6,Plan 10,17360,4867,16988,4503,0,Septiembre a Octubre 2027,#8b5cf6
+7,Plan 11,24233,7051,18223,23793,0,Octubre a Diciembre 2027,#f43f5e
+8,Plan 14,47912,1070,3192,47879,0,Diciembre 2027 a Mayo 2028,#14b8a6
+9,Plan 15,30593,1132,4059,29995,0,Mayo a Agosto 2028,#eab308

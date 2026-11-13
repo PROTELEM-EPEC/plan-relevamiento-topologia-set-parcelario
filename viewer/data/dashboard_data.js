@@ -6945,9 +6945,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 5.0,
       "diagnostico_operativo": "FASE_FINAL_REMANENTES",
       "total_parcelas": 17931,
-      "parcelas_frontera": 5325,
+      "parcelas_frontera": 5327,
       "parcelas_a_dibujar": 1040,
-      "pct_frontera": 29.7,
+      "pct_frontera": 29.71,
       "pct_a_dibujar": 5.8
     },
     {
@@ -6961,9 +6961,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 2.0,
       "diagnostico_operativo": "FASE_FINAL_REMANENTES",
       "total_parcelas": 9773,
-      "parcelas_frontera": 3936,
+      "parcelas_frontera": 3935,
       "parcelas_a_dibujar": 452,
-      "pct_frontera": 40.27,
+      "pct_frontera": 40.26,
       "pct_a_dibujar": 4.62
     },
     {
@@ -6977,9 +6977,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 16.0,
       "diagnostico_operativo": "FASE_FINAL_REMANENTES",
       "total_parcelas": 24245,
-      "parcelas_frontera": 7346,
+      "parcelas_frontera": 7342,
       "parcelas_a_dibujar": 1531,
-      "pct_frontera": 30.3,
+      "pct_frontera": 30.28,
       "pct_a_dibujar": 6.31
     },
     {
@@ -7009,9 +7009,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 29.0,
       "diagnostico_operativo": "FASE_FINAL_REMANENTES",
       "total_parcelas": 16371,
-      "parcelas_frontera": 4711,
+      "parcelas_frontera": 4704,
       "parcelas_a_dibujar": 3017,
-      "pct_frontera": 28.78,
+      "pct_frontera": 28.73,
       "pct_a_dibujar": 18.43
     },
     {
@@ -7025,9 +7025,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 5.0,
       "diagnostico_operativo": "FASE_FINAL_REMANENTES",
       "total_parcelas": 8808,
-      "parcelas_frontera": 3224,
+      "parcelas_frontera": 3215,
       "parcelas_a_dibujar": 349,
-      "pct_frontera": 36.6,
+      "pct_frontera": 36.5,
       "pct_a_dibujar": 3.96
     },
     {
@@ -7041,9 +7041,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 81.0,
       "diagnostico_operativo": "RELEVAMIENTO_MIXTO_ESTANDAR",
       "total_parcelas": 12101,
-      "parcelas_frontera": 4585,
+      "parcelas_frontera": 4584,
       "parcelas_a_dibujar": 2555,
-      "pct_frontera": 37.89,
+      "pct_frontera": 37.88,
       "pct_a_dibujar": 21.11
     },
     {
@@ -7057,9 +7057,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 70.0,
       "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO",
       "total_parcelas": 6189,
-      "parcelas_frontera": 3403,
+      "parcelas_frontera": 3409,
       "parcelas_a_dibujar": 1279,
-      "pct_frontera": 54.98,
+      "pct_frontera": 55.08,
       "pct_a_dibujar": 20.67
     },
     {
@@ -7073,9 +7073,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 74.0,
       "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA",
       "total_parcelas": 8186,
-      "parcelas_frontera": 3171,
+      "parcelas_frontera": 3170,
       "parcelas_a_dibujar": 2872,
-      "pct_frontera": 38.74,
+      "pct_frontera": 38.72,
       "pct_a_dibujar": 35.08
     },
     {
@@ -7089,9 +7089,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 22.0,
       "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA",
       "total_parcelas": 12121,
-      "parcelas_frontera": 4176,
+      "parcelas_frontera": 4183,
       "parcelas_a_dibujar": 691,
-      "pct_frontera": 34.45,
+      "pct_frontera": 34.51,
       "pct_a_dibujar": 5.7
     },
     {
@@ -7105,9 +7105,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 122.0,
       "diagnostico_operativo": "SENSIBILIDAD_SOCIAL_PRIORITARIA",
       "total_parcelas": 11172,
-      "parcelas_frontera": 4332,
+      "parcelas_frontera": 4338,
       "parcelas_a_dibujar": 2719,
-      "pct_frontera": 38.78,
+      "pct_frontera": 38.83,
       "pct_a_dibujar": 24.34
     },
     {
@@ -7121,9 +7121,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 15.0,
       "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO",
       "total_parcelas": 8949,
-      "parcelas_frontera": 2944,
+      "parcelas_frontera": 2943,
       "parcelas_a_dibujar": 581,
-      "pct_frontera": 32.9,
+      "pct_frontera": 32.89,
       "pct_a_dibujar": 6.49
     },
     {
@@ -7137,9 +7137,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 9.0,
       "diagnostico_operativo": "FASE_FINAL_REMANENTES",
       "total_parcelas": 18399,
-      "parcelas_frontera": 5195,
+      "parcelas_frontera": 5192,
       "parcelas_a_dibujar": 1153,
-      "pct_frontera": 28.24,
+      "pct_frontera": 28.22,
       "pct_a_dibujar": 6.27
     },
     {
@@ -7153,9 +7153,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 89.0,
       "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO",
       "total_parcelas": 2122,
-      "parcelas_frontera": 23,
+      "parcelas_frontera": 25,
       "parcelas_a_dibujar": 1047,
-      "pct_frontera": 1.08,
+      "pct_frontera": 1.18,
       "pct_a_dibujar": 49.34
     },
     {
@@ -7169,9 +7169,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 176.0,
       "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO",
       "total_parcelas": 2927,
-      "parcelas_frontera": 102,
+      "parcelas_frontera": 103,
       "parcelas_a_dibujar": 1030,
-      "pct_frontera": 3.48,
+      "pct_frontera": 3.52,
       "pct_a_dibujar": 35.19
     },
     {
@@ -7185,9 +7185,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 9.0,
       "diagnostico_operativo": "FASE_FINAL_REMANENTES",
       "total_parcelas": 33638,
-      "parcelas_frontera": 10042,
+      "parcelas_frontera": 10050,
       "parcelas_a_dibujar": 2834,
-      "pct_frontera": 29.85,
+      "pct_frontera": 29.88,
       "pct_a_dibujar": 8.42
     },
     {
@@ -7201,9 +7201,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 52.0,
       "diagnostico_operativo": "RELEVAMIENTO_MASIVO_CC_INMEDIATO",
       "total_parcelas": 9429,
-      "parcelas_frontera": 3211,
+      "parcelas_frontera": 3213,
       "parcelas_a_dibujar": 800,
-      "pct_frontera": 34.05,
+      "pct_frontera": 34.08,
       "pct_a_dibujar": 8.48
     },
     {
@@ -7217,9 +7217,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 12.0,
       "diagnostico_operativo": "FASE_FINAL_REMANENTES",
       "total_parcelas": 24759,
-      "parcelas_frontera": 7623,
+      "parcelas_frontera": 7617,
       "parcelas_a_dibujar": 533,
-      "pct_frontera": 30.79,
+      "pct_frontera": 30.76,
       "pct_a_dibujar": 2.15
     },
     {
@@ -7233,9 +7233,9 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 7.0,
       "diagnostico_operativo": "FASE_FINAL_REMANENTES",
       "total_parcelas": 10016,
-      "parcelas_frontera": 4076,
+      "parcelas_frontera": 4067,
       "parcelas_a_dibujar": 529,
-      "pct_frontera": 40.69,
+      "pct_frontera": 40.61,
       "pct_a_dibujar": 5.28
     },
     {
@@ -7249,12 +7249,988 @@ window.DASHBOARD_DATA = {
       "pendientes_otros": 8.0,
       "diagnostico_operativo": "FASE_FINAL_REMANENTES",
       "total_parcelas": 21271,
-      "parcelas_frontera": 6780,
+      "parcelas_frontera": 6788,
       "parcelas_a_dibujar": 1247,
-      "pct_frontera": 31.87,
+      "pct_frontera": 31.91,
       "pct_a_dibujar": 5.86
     }
   ],
+  "cronograma_despliegue": {
+    "planes_prioritarios_tabla": [
+      {
+        "orden": 0,
+        "plan": "Plan 05",
+        "suministros": 27593,
+        "parcelas_analizar": 4711,
+        "total_parcelas": 16371,
+        "pendientes": 5438,
+        "relevados_nov": 684,
+        "estado_cronograma": "Completando en Noviembre 2026",
+        "color": "#10b981"
+      },
+      {
+        "orden": 1,
+        "plan": "Plan 08",
+        "suministros": 27622,
+        "parcelas_analizar": 4682,
+        "total_parcelas": 10871,
+        "pendientes": 27535,
+        "relevados_nov": 0,
+        "estado_cronograma": "Arranque Diciembre 2026",
+        "color": "#6366f1"
+      },
+      {
+        "orden": 2,
+        "plan": "Plan 12",
+        "suministros": 22098,
+        "parcelas_analizar": 3525,
+        "total_parcelas": 12474,
+        "pendientes": 10452,
+        "relevados_nov": 0,
+        "estado_cronograma": "Febrero a Marzo 2027",
+        "color": "#3b82f6"
+      },
+      {
+        "orden": 3,
+        "plan": "Plan 17",
+        "suministros": 34787,
+        "parcelas_analizar": 4011,
+        "total_parcelas": 13440,
+        "pendientes": 19496,
+        "relevados_nov": 1,
+        "estado_cronograma": "Marzo a Mayo 2027",
+        "color": "#06b6d4"
+      },
+      {
+        "orden": 4,
+        "plan": "Plan 07",
+        "suministros": 25216,
+        "parcelas_analizar": 7140,
+        "total_parcelas": 19241,
+        "pendientes": 24348,
+        "relevados_nov": 126,
+        "estado_cronograma": "Mayo a Agosto 2027",
+        "color": "#f59e0b"
+      },
+      {
+        "orden": 5,
+        "plan": "Plan 09",
+        "suministros": 16863,
+        "parcelas_analizar": 6043,
+        "total_parcelas": 14229,
+        "pendientes": 16047,
+        "relevados_nov": 0,
+        "estado_cronograma": "Agosto a Septiembre 2027",
+        "color": "#ec4899"
+      },
+      {
+        "orden": 6,
+        "plan": "Plan 10",
+        "suministros": 17360,
+        "parcelas_analizar": 4867,
+        "total_parcelas": 16988,
+        "pendientes": 4503,
+        "relevados_nov": 0,
+        "estado_cronograma": "Septiembre a Octubre 2027",
+        "color": "#8b5cf6"
+      },
+      {
+        "orden": 7,
+        "plan": "Plan 11",
+        "suministros": 24233,
+        "parcelas_analizar": 7051,
+        "total_parcelas": 18223,
+        "pendientes": 23793,
+        "relevados_nov": 0,
+        "estado_cronograma": "Octubre a Diciembre 2027",
+        "color": "#f43f5e"
+      },
+      {
+        "orden": 8,
+        "plan": "Plan 14",
+        "suministros": 47912,
+        "parcelas_analizar": 1070,
+        "total_parcelas": 3192,
+        "pendientes": 47879,
+        "relevados_nov": 0,
+        "estado_cronograma": "Diciembre 2027 a Mayo 2028",
+        "color": "#14b8a6"
+      },
+      {
+        "orden": 9,
+        "plan": "Plan 15",
+        "suministros": 30593,
+        "parcelas_analizar": 1132,
+        "total_parcelas": 4059,
+        "pendientes": 29995,
+        "relevados_nov": 0,
+        "estado_cronograma": "Mayo a Agosto 2028",
+        "color": "#eab308"
+      }
+    ],
+    "colores_planes": {
+      "Plan 05": "#10b981",
+      "Plan 08": "#6366f1",
+      "Plan 12": "#3b82f6",
+      "Plan 17": "#06b6d4",
+      "Plan 07": "#f59e0b",
+      "Plan 09": "#ec4899",
+      "Plan 10": "#8b5cf6",
+      "Plan 11": "#f43f5e",
+      "Plan 14": "#14b8a6",
+      "Plan 15": "#eab308",
+      "Remanentes (10 Planes)": "#64748b"
+    },
+    "crono_pendientes_9": [
+      {
+        "mes": "Nov-2026",
+        "anio": 2026,
+        "mes_num": 11,
+        "asignaciones": {
+          "Plan 05": 6122,
+          "Plan 07": 126
+        },
+        "total": 6248,
+        "meta_mensual": 10000,
+        "estado": "EJECUCION_ACTUAL"
+      },
+      {
+        "mes": "Dic-2026",
+        "anio": 2026,
+        "mes_num": 12,
+        "asignaciones": {
+          "Plan 08": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ene-2027",
+        "anio": 2027,
+        "mes_num": 1,
+        "asignaciones": {
+          "Plan 08": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Feb-2027",
+        "anio": 2027,
+        "mes_num": 2,
+        "asignaciones": {
+          "Plan 08": 7535,
+          "Plan 12": 2465
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Mar-2027",
+        "anio": 2027,
+        "mes_num": 3,
+        "asignaciones": {
+          "Plan 12": 7987,
+          "Plan 17": 2013
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Abr-2027",
+        "anio": 2027,
+        "mes_num": 4,
+        "asignaciones": {
+          "Plan 17": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "May-2027",
+        "anio": 2027,
+        "mes_num": 5,
+        "asignaciones": {
+          "Plan 17": 7483,
+          "Plan 07": 2517
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jun-2027",
+        "anio": 2027,
+        "mes_num": 6,
+        "asignaciones": {
+          "Plan 07": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jul-2027",
+        "anio": 2027,
+        "mes_num": 7,
+        "asignaciones": {
+          "Plan 07": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ago-2027",
+        "anio": 2027,
+        "mes_num": 8,
+        "asignaciones": {
+          "Plan 07": 1831,
+          "Plan 09": 8169
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Sep-2027",
+        "anio": 2027,
+        "mes_num": 9,
+        "asignaciones": {
+          "Plan 09": 7878,
+          "Plan 10": 2122
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Oct-2027",
+        "anio": 2027,
+        "mes_num": 10,
+        "asignaciones": {
+          "Plan 10": 2381,
+          "Plan 11": 7619
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Nov-2027",
+        "anio": 2027,
+        "mes_num": 11,
+        "asignaciones": {
+          "Plan 11": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Dic-2027",
+        "anio": 2027,
+        "mes_num": 12,
+        "asignaciones": {
+          "Plan 11": 6174,
+          "Plan 14": 3826
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ene-2028",
+        "anio": 2028,
+        "mes_num": 1,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Feb-2028",
+        "anio": 2028,
+        "mes_num": 2,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Mar-2028",
+        "anio": 2028,
+        "mes_num": 3,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Abr-2028",
+        "anio": 2028,
+        "mes_num": 4,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "May-2028",
+        "anio": 2028,
+        "mes_num": 5,
+        "asignaciones": {
+          "Plan 14": 4053,
+          "Plan 15": 5947
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jun-2028",
+        "anio": 2028,
+        "mes_num": 6,
+        "asignaciones": {
+          "Plan 15": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jul-2028",
+        "anio": 2028,
+        "mes_num": 7,
+        "asignaciones": {
+          "Plan 15": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ago-2028",
+        "anio": 2028,
+        "mes_num": 8,
+        "asignaciones": {
+          "Plan 15": 4048
+        },
+        "total": 4048,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      }
+    ],
+    "crono_pendientes_full": [
+      {
+        "mes": "Nov-2026",
+        "anio": 2026,
+        "mes_num": 11,
+        "asignaciones": {
+          "Plan 05": 6122,
+          "Plan 07": 126
+        },
+        "total": 6248,
+        "meta_mensual": 10000,
+        "estado": "EJECUCION_ACTUAL"
+      },
+      {
+        "mes": "Dic-2026",
+        "anio": 2026,
+        "mes_num": 12,
+        "asignaciones": {
+          "Plan 08": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ene-2027",
+        "anio": 2027,
+        "mes_num": 1,
+        "asignaciones": {
+          "Plan 08": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Feb-2027",
+        "anio": 2027,
+        "mes_num": 2,
+        "asignaciones": {
+          "Plan 08": 7535,
+          "Plan 12": 2465
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Mar-2027",
+        "anio": 2027,
+        "mes_num": 3,
+        "asignaciones": {
+          "Plan 12": 7987,
+          "Plan 17": 2013
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Abr-2027",
+        "anio": 2027,
+        "mes_num": 4,
+        "asignaciones": {
+          "Plan 17": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "May-2027",
+        "anio": 2027,
+        "mes_num": 5,
+        "asignaciones": {
+          "Plan 17": 7483,
+          "Plan 07": 2517
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jun-2027",
+        "anio": 2027,
+        "mes_num": 6,
+        "asignaciones": {
+          "Plan 07": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jul-2027",
+        "anio": 2027,
+        "mes_num": 7,
+        "asignaciones": {
+          "Plan 07": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ago-2027",
+        "anio": 2027,
+        "mes_num": 8,
+        "asignaciones": {
+          "Plan 07": 1831,
+          "Plan 09": 8169
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Sep-2027",
+        "anio": 2027,
+        "mes_num": 9,
+        "asignaciones": {
+          "Plan 09": 7878,
+          "Plan 10": 2122
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Oct-2027",
+        "anio": 2027,
+        "mes_num": 10,
+        "asignaciones": {
+          "Plan 10": 2381,
+          "Plan 11": 7619
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Nov-2027",
+        "anio": 2027,
+        "mes_num": 11,
+        "asignaciones": {
+          "Plan 11": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Dic-2027",
+        "anio": 2027,
+        "mes_num": 12,
+        "asignaciones": {
+          "Plan 11": 6174,
+          "Plan 14": 3826
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ene-2028",
+        "anio": 2028,
+        "mes_num": 1,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Feb-2028",
+        "anio": 2028,
+        "mes_num": 2,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Mar-2028",
+        "anio": 2028,
+        "mes_num": 3,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Abr-2028",
+        "anio": 2028,
+        "mes_num": 4,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "May-2028",
+        "anio": 2028,
+        "mes_num": 5,
+        "asignaciones": {
+          "Plan 14": 4053,
+          "Plan 15": 5947
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jun-2028",
+        "anio": 2028,
+        "mes_num": 6,
+        "asignaciones": {
+          "Plan 15": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jul-2028",
+        "anio": 2028,
+        "mes_num": 7,
+        "asignaciones": {
+          "Plan 15": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ago-2028",
+        "anio": 2028,
+        "mes_num": 8,
+        "asignaciones": {
+          "Plan 15": 4048,
+          "Remanentes (10 Planes)": 5952
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Sep-2028",
+        "anio": 2028,
+        "mes_num": 9,
+        "asignaciones": {
+          "Remanentes (10 Planes)": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Oct-2028",
+        "anio": 2028,
+        "mes_num": 10,
+        "asignaciones": {
+          "Remanentes (10 Planes)": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Nov-2028",
+        "anio": 2028,
+        "mes_num": 11,
+        "asignaciones": {
+          "Remanentes (10 Planes)": 1708
+        },
+        "total": 1708,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      }
+    ],
+    "crono_sumis_9": [
+      {
+        "mes": "Nov-2026",
+        "anio": 2026,
+        "mes_num": 11,
+        "asignaciones": {
+          "Plan 05": 6122,
+          "Plan 07": 126
+        },
+        "total": 6248,
+        "meta_mensual": 10000,
+        "estado": "EJECUCION_ACTUAL"
+      },
+      {
+        "mes": "Dic-2026",
+        "anio": 2026,
+        "mes_num": 12,
+        "asignaciones": {
+          "Plan 08": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ene-2027",
+        "anio": 2027,
+        "mes_num": 1,
+        "asignaciones": {
+          "Plan 08": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Feb-2027",
+        "anio": 2027,
+        "mes_num": 2,
+        "asignaciones": {
+          "Plan 08": 7622,
+          "Plan 12": 2378
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Mar-2027",
+        "anio": 2027,
+        "mes_num": 3,
+        "asignaciones": {
+          "Plan 12": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Abr-2027",
+        "anio": 2027,
+        "mes_num": 4,
+        "asignaciones": {
+          "Plan 12": 9720,
+          "Plan 17": 280
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "May-2027",
+        "anio": 2027,
+        "mes_num": 5,
+        "asignaciones": {
+          "Plan 17": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jun-2027",
+        "anio": 2027,
+        "mes_num": 6,
+        "asignaciones": {
+          "Plan 17": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jul-2027",
+        "anio": 2027,
+        "mes_num": 7,
+        "asignaciones": {
+          "Plan 17": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ago-2027",
+        "anio": 2027,
+        "mes_num": 8,
+        "asignaciones": {
+          "Plan 17": 4507,
+          "Plan 07": 5493
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Sep-2027",
+        "anio": 2027,
+        "mes_num": 9,
+        "asignaciones": {
+          "Plan 07": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Oct-2027",
+        "anio": 2027,
+        "mes_num": 10,
+        "asignaciones": {
+          "Plan 07": 9723,
+          "Plan 09": 277
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Nov-2027",
+        "anio": 2027,
+        "mes_num": 11,
+        "asignaciones": {
+          "Plan 09": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Dic-2027",
+        "anio": 2027,
+        "mes_num": 12,
+        "asignaciones": {
+          "Plan 09": 6586,
+          "Plan 10": 3414
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ene-2028",
+        "anio": 2028,
+        "mes_num": 1,
+        "asignaciones": {
+          "Plan 10": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Feb-2028",
+        "anio": 2028,
+        "mes_num": 2,
+        "asignaciones": {
+          "Plan 10": 3946,
+          "Plan 11": 6054
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Mar-2028",
+        "anio": 2028,
+        "mes_num": 3,
+        "asignaciones": {
+          "Plan 11": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Abr-2028",
+        "anio": 2028,
+        "mes_num": 4,
+        "asignaciones": {
+          "Plan 11": 8179,
+          "Plan 14": 1821
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "May-2028",
+        "anio": 2028,
+        "mes_num": 5,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jun-2028",
+        "anio": 2028,
+        "mes_num": 6,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Jul-2028",
+        "anio": 2028,
+        "mes_num": 7,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Ago-2028",
+        "anio": 2028,
+        "mes_num": 8,
+        "asignaciones": {
+          "Plan 14": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Sep-2028",
+        "anio": 2028,
+        "mes_num": 9,
+        "asignaciones": {
+          "Plan 14": 6091,
+          "Plan 15": 3909
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Oct-2028",
+        "anio": 2028,
+        "mes_num": 10,
+        "asignaciones": {
+          "Plan 15": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Nov-2028",
+        "anio": 2028,
+        "mes_num": 11,
+        "asignaciones": {
+          "Plan 15": 10000
+        },
+        "total": 10000,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      },
+      {
+        "mes": "Dic-2028",
+        "anio": 2028,
+        "mes_num": 12,
+        "asignaciones": {
+          "Plan 15": 6684
+        },
+        "total": 6684,
+        "meta_mensual": 10000,
+        "estado": "PROYECTADO"
+      }
+    ],
+    "resumen_ejecutivo": {
+      "ritmo_mensual": 10000,
+      "mes_inicio": "Nov-2026",
+      "noviembre_plan_05": 6122,
+      "diciembre_arranque": "Plan 08",
+      "meses_9_planes": 22,
+      "mes_fin_9_planes": "Ago-2028",
+      "total_casos_9_planes": 210296,
+      "meses_20_planes": 25,
+      "mes_fin_20_planes": "Nov-2028",
+      "total_casos_20_planes": 237956
+    }
+  },
   "subestaciones_top_pendientes": [
     {
       "id": 16326,
