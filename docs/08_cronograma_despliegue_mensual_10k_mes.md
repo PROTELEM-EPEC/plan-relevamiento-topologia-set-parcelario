@@ -119,3 +119,4 @@ En el visor web [viewer/index.html](file:///D:/Proyectos/plan-relevamiento-topol
 - **Reporte CSV Cronograma Mes a Mes:** `reports/cronograma_despliegue_mensual_10k.csv`
 - **Dataset JavaScript del Dashboard:** `viewer/data/dashboard_data.js`
 - **Script Generador de Datos y Auditoría:** `src/03_analisis_calidad_poligonos_y_plan_futuro.py`
+
